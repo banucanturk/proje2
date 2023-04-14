@@ -1,53 +1,40 @@
 :root {
     --main-color: hotpink;
     --pane-padding: 5px 42px;
-  }
+}
 
 
 * {
     font-family: "Inter", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.1px;
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
     font-size: 36px;
     line-height: 44px;
-    letter-spacing: -0.02em;
 }
 
 h2 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.02em;
-    margin-bottom: 12px;
 }
 
 h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     letter-spacing: -0.02em;
-    margin-bottom: 24px;
 }
 
 h4 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: -0.01px;
 }
 
 h5 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
     font-size: 20px;
     line-height: 28px;
-    letter-spacing: -0.01em;
 }
 
 
@@ -55,6 +42,4 @@ h5 {
 
 
 
-@media (min-width: 704px) {
-
-}
+@media (min-width: 768px) {}
