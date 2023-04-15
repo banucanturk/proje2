@@ -112,6 +112,7 @@ body {
     width: 280px;
     height: 1460px;
     background: var(--bg-dark-blue); 
+    position: relative;
 }
 
 .sideBarHeader {
@@ -144,9 +145,11 @@ body {
 }
 .sideBarSection {
     padding-left: 28px;
+    display: flex;
+    flex-direction: column;
 
 }
-.sideBarSectionAnalysıs h4 {
+.sideBarSectionAnalysis h4 {
     color: #A5ACBA;
     padding-bottom: 28px;
     
@@ -159,6 +162,11 @@ body {
     gap: 12px;
     align-items: flex-start;
 }
+.sideMenuSection ul {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
  .sideMenuSection ul a {
     width: 157px;
     display:block;
@@ -169,8 +177,6 @@ body {
  }
 
  .sideMenuSection li {
-
-    padding-bottom: 28px;
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.1px;
@@ -187,9 +193,16 @@ body {
     align-items: center;
     padding: 0px 6px;
  }
-
-
- 
+.malik{
+  position: absolute;
+  bottom: 0;
+ }
+ .sideBarSection .malik {
+    margin-top: auto;
+ }
+/* .sideBarSectionAnalysıs:last-child {
+    padding: 0 40px;
+} */
  /* .bg{
     background-color:#333B48;
     display: flex;
