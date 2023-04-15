@@ -131,13 +131,16 @@ body {
     letter-spacing: -0.1px;
     color: #F9F9F9;
 }
+.overview {
+    color: var(--white);
+}
 
 .sideBarHeaderText > p:last-child {
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.1px;
-    color: #A5ACBA;
+    color: var(--text-secondry-gray);
 }
 .sideBarSection {
     padding-left: 28px;
@@ -154,12 +157,19 @@ body {
 .sideMenuSection li {
     display: flex;
     gap: 12px;
+    align-items: flex-start;
 }
  .sideMenuSection ul a {
+    width: 157px;
     display:block;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: #A5ACBA;
  }
+
  .sideMenuSection li {
- 
+
     padding-bottom: 28px;
     font-size: 15px;
     line-height: 22px;
@@ -183,11 +193,11 @@ body {
  /* .bg{
     background-color:#333B48;
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 28px;
-gap: 12px;
-isolation: isolate;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 28px;
+    gap: 12px;
+    isolation: isolate;
 
 
  } */
