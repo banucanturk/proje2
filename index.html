@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/reset.css?v=1"/>
-  <link rel="stylesheet" href="assets/css/dashboard.css?v=1"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/reset.css?v=1" />
+  <link rel="stylesheet" href="assets/css/dashboard.css?v=1" />
   <title>Dashboard</title>
 </head>
+
 <body>
-<div class="div">
-  <a href="#" class="btnSecondry ">Add item</a>
-  
-</div>  
+
+  <section class="container graphic">
+    <div class="graphicTopicMobile">
+      <h2>Revenue</h2>
+      <img src="assets/images/icon/detail-button.svg" alt="">
+    </div>
+    <div class="graphicTopicDesktop">
+      <h2>Advanced Graphic</h2>
+    </div>
+    <div class="graphicChard">
+
+      <figcaption>
+        <div class="graphicChardTextMobile">
+          <p>Total Transaction Revenue</p>
+          <p>$135,450</p>
+        </div>
+        <div class="graphicChardTextDesktop">
+          <img src="assets/images/icon/small-box.svg" alt="small box">
+          <p>e-business</p>
+          <img src="assets/images/icon/small-box-dark.svg" alt="small box dark">
+          <p>infrastructures</p>
+        </div>
+      </figcaption>
+      <picture>
+        <source media="(min-width:768px)" srcset="assets/images/png/chard-base.png">
+        <img src="assets/images/png/chard-mobile.png" alt="chard">
+      </picture>
+
+    </div>
+    <div class="graphicBottom">
+      <p>Data graph</p>
+      <a href="#">Open<img src="assets/images/icon/open.svg" alt="open"></a>
+    </div>
+  </section>
 
 
 
 
-
-
-
-    <script src="assets/script/script.js"></script>
+  <script src="assets/script/script.js"></script>
 </body>
+
 </html>

@@ -83,9 +83,97 @@ h5 {
 }
 
 
+/*-------------------- Graphic --------------------*/
+
+.graphic {
+    margin: 32px;
+    border: 1px solid var(--border-gray);
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.graphicTopicDesktop {
+    border-bottom: 1px solid var(--border-gray);
+    padding: 16px 20px;
+}
+
+.graphicTopicMobile {
+    display: none;
+}
+
+.graphicChard {
+    padding: 16px 20px;
+}
+
+.graphicChardTextMobile {
+    display: none;
+}
+
+.graphicChardTextDesktop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: end;
+}
+
+.graphicChardTextDesktop img {
+    display: inline-block;
+}
+
+.graphicChardTextDesktop p {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-primary-gray);
+}
+
+.graphicChardTextDesktop p:nth-child(2) {
+    margin-right: 24px;
+}
+
+.graphicBottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-gray);
+    padding: 16px 20px 16px 20px;
+}
+
+.graphicBottom a {
+    color: var(--primary-blue);
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.graphicBottom img {
+    display: inline-block;
+}
 
 
 
+@media (max-width: 768px) {
+    .graphicChardTextDesktop {
+        display: none;
+    }
 
+    .graphicTopicDesktop {
+        display: none;
+    }
 
-@media (min-width: 768px) {}
+    .graphicTopicMobile {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border-gray);
+        padding: 16px 20px;
+    }
+
+    .graphicChardTextMobile {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .graphicBottom p {
+        display: none;
+    }
+}
