@@ -183,7 +183,7 @@ h5 {
     border: 1px solid var(--border-primary-gray);
 }
 
-.btnArrow{
+.btnArrow {
     display: flex;
     gap: 6px;
 }
@@ -270,6 +270,7 @@ h5 {
     border: 1px solid var(--primary-blue);
     border-radius: 10px;
 }
+
 
 
 
