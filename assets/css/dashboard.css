@@ -37,6 +37,11 @@
     letter-spacing: -0.1px;
 }
 
+.containerMain {
+    padding: 32px;
+}
+
+
 h2 {
     font-weight: 600;
     font-size: 28px;
@@ -155,12 +160,6 @@ h5 {
     letter-spacing: -0.02em;
 }
 
-
-
-
-
-
-
 /* Button */
 
 .btnPrimary {
@@ -188,14 +187,13 @@ h5 {
     gap: 6px;
 }
 
-
-
-
+/* sectionHeader */
 
 .sectionHeader {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 32px;
 }
 
 .breadcrumb {
@@ -231,16 +229,17 @@ h5 {
     gap: 12px;
 }
 
-.cards {
+/* cards */
+
+.content .cards {
     display: flex;
-    flex-direction: row;
     align-items: flex-end;
     gap: 24px;
+    margin-bottom: 32px;
 }
 
-.card {
+.content .card {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 16px 20px;
     gap: 12px;
@@ -258,6 +257,7 @@ h5 {
     align-items: flex-start;
 }
 
+/* dashboardAlert */
 
 .dashboardAlert {
     display: flex;
@@ -265,14 +265,132 @@ h5 {
     align-items: center;
     padding: 16px 20px;
     gap: 16px;
-
+    margin-bottom: 32px;
     background: var(--secondry-blue);
     border: 1px solid var(--primary-blue);
     border-radius: 10px;
 }
 
+/*-------------------- Graphic --------------------*/
+
+.graphic {
+    border: 1px solid var(--border-secondry-gray);
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    margin-bottom: 32px;
+}
+
+.graphicTopicDesktop {
+    border-bottom: 1px solid var(--border-secondry-gray);
+    padding: 16px 20px;
+}
+
+.graphicTopicMobile {
+    display: none;
+}
+
+.graphicChard {
+    padding: 16px 20px;
+}
+
+.graphicChardTextMobile {
+    display: none;
+}
+
+.graphicChardTextDesktop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: end;
+}
+
+.graphicChardTextDesktop img {
+    display: inline-block;
+}
+
+.graphicChardTextDesktop p {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-primary-gray);
+}
+
+.graphicChardTextDesktop p:nth-child(2) {
+    margin-right: 24px;
+}
+
+.graphicBottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-secondry-gray);
+    padding: 16px 20px 16px 20px;
+}
+
+.graphicBottom a {
+    color: var(--primary-blue);
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.graphicBottom img {
+    display: inline-block;
+}
+
+/* allData START */
+.containerInsideData {
+    border: 1px solid var(--border-secondry-gray);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    border-radius: 10px;
+}
+
+.dataHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.allData .data {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 24px;
+}
+
+/* allData END */
 
 
+@media (max-width: 768px) {
+    .graphicChardTextDesktop {
+        display: none;
+    }
 
+    .graphicTopicDesktop {
+        display: none;
+    }
 
-@media (min-width: 768px) {}
+    .graphicTopicMobile {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--border-secondry-gray);
+        padding: 16px 20px;
+    }
+
+    .graphicChardTextMobile {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .graphicBottom p {
+        display: none;
+    }
+}
