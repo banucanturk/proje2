@@ -258,7 +258,7 @@ h5 {
     align-items: flex-start;
 }
 
-span {
+.content span {
     padding: 2px 8px;
     border-radius: 5px;
     font-size: 14px;
@@ -386,6 +386,81 @@ span {
     align-items: center;
     gap: 8px;
     padding: 16px 24px;
+}
+
+table tr {
+    border-top: 1px solid var(--border-secondry-gray);
+}
+
+thead tr {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr 2fr 3fr 1fr;
+}
+
+thead th {
+    padding: 13px 0 13px 24px;
+    text-align: start;
+}
+
+tbody td {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+
+tbody .textSMedium {
+    color: var(--text-darkgray);
+}
+
+tbody .priceProfit {
+    color: var(--text-green);
+}
+
+tbody .priceLoss {
+    color: var(--text-primary-gray);
+}
+
+tbody .date {
+    color: var(--text-primary-gray);
+}
+
+tbody .account {
+    gap: 12px;
+}
+
+tbody .accountInfo span {
+    color: var(--text-primary-gray);
+}
+
+tbody tr {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr 2fr 3fr 1fr;
+}
+
+tbody td:first-child {
+    padding: 16px 17px 16px 24px;
+    justify-content: flex-start;
+}
+
+tbody td:nth-child(2) {
+    padding: 22px 24px;
+}
+
+tbody td:nth-child(3) {
+    padding: 22px 24px;
+}
+
+tbody td:nth-child(4) {
+    padding: 12px 26px 12px 24px;
+}
+
+tbody td:last-child {
+    justify-content: center;
+}
+
+tbody td:last-child a {
+    padding: 10px;
 }
 
 /* allData END */
