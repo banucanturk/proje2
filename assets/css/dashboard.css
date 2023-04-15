@@ -37,10 +37,6 @@
     letter-spacing: -0.1px;
 }
 
-.containerMain {
-    padding: 32px;
-}
-
 
 h2 {
     font-weight: 600;
@@ -188,7 +184,118 @@ h5 {
     gap: 6px;
 }
 
-/* sectionHeader */
+body {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+
+/*-------------------- sideBar START ---------------------*/
+
+.containerSideBar{
+    padding: 16.24px 28px;
+    background: var(--bg-dark-blue);
+}
+
+.sideBar {
+    height: 1460px;
+    position: relative;
+}
+
+.sideBarHeader {
+    display: flex;
+    gap: 12px;
+    background-color: var(--border-dark-blue);
+    padding: 8px 16px;
+    border: 1px solid #252D3C;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    border-radius: 5px;
+    margin-bottom: 28px;
+}
+
+.sideBarHeaderText>p:first-child {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #F9F9F9;
+}
+
+.sideBarHeaderText>p:last-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    color: var(--text-secondry-gray);
+}
+
+.sideBarSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBarSectionAnalysis h4 {
+    color: #A5ACBA;
+    padding-bottom: 28px;
+}
+
+.sideMenuSection ul {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.sideMenuSection li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: #A5ACBA;
+}
+
+.sideMenuSection ul a {
+    width: 157px;
+    display: block;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: #A5ACBA;
+}
+
+.overview {
+    color: var(--white);
+}
+
+.sideMenuSection ul li p {
+    color: var(--white);
+    background-color: var(--primary-blue);
+    border-radius: 20px;
+    width: 21px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 6px;
+}
+
+.sideBarSectionStart{
+    margin-bottom: 40px;
+}
+
+.sideBarSectionEnd {
+    position: absolute;
+    bottom: 0;
+}
+
+/*-------------------- sideBar END ---------------------*/
+
+/*-------------------- containerMain START ---------------------*/
+
+.containerMain {
+    padding: 32px;
+    background: #FAFBFC;
+}
+
+/*-- sectionHeader START --*/
 
 .sectionHeader {
     display: flex;
@@ -230,16 +337,18 @@ h5 {
     gap: 12px;
 }
 
-/* cards */
+/*-- sectionHeader END --*/
 
-.content .cards {
+/*-- lossGrowthCards START --*/
+
+.lossGrowthCards {
     display: flex;
     align-items: flex-end;
     gap: 24px;
     margin-bottom: 32px;
 }
 
-.content .card {
+.lossGrowthCard {
     display: flex;
     align-items: center;
     padding: 16px 20px;
@@ -279,7 +388,9 @@ span {
     color: var(--primary-red);
 }
 
-/* dashboardAlert */
+/*-- lossGrowthCards END --*/
+
+/*-- dashboardAlert START --*/
 
 .dashboardAlert {
     display: flex;
@@ -293,7 +404,9 @@ span {
     border-radius: 10px;
 }
 
-/*-------------------- Graphic --------------------*/
+/*-- dashboardAlert END --*/
+
+/*-- graphic START --*/
 
 .graphic {
     border: 1px solid var(--border-secondry-gray);
@@ -360,12 +473,9 @@ span {
     display: inline-block;
 }
 
-/* allData START */
-.containerInsideData {
-    border: 1px solid var(--border-secondry-gray);
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
-    border-radius: 10px;
-}
+/*-- graphic END --*/
+
+/*-- allData START --*/
 
 .dataHeader {
     display: flex;
@@ -380,6 +490,12 @@ span {
     justify-content: space-between;
 }
 
+.containerInsideData {
+    border: 1px solid var(--border-secondry-gray);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    border-radius: 10px;
+}
+
 .tableHeader {
     display: flex;
     justify-content: space-between;
@@ -389,109 +505,9 @@ span {
 }
 
 /* allData END */
-body {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    
-}
 
+/*-------------------- containerMain END ---------------------*/
 
-.sideBar {
-    width: 280px;
-    height: 1460px;
-    background: var(--bg-dark-blue); 
-    position: relative;
-}
-
-.sideBarHeader {
-    display: flex;
-    gap: 12px;
-    background-color: var(--border-dark-blue);
-    padding: 8px 16px;
-    border: 1px solid #252D3C;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
-    border-radius: 5px;
-    margin: 16px 28px 28px;
-}
-
-.sideBarHeaderText > p:first-child{
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.1px;
-    color: #F9F9F9;
-}
-.overview {
-    color: var(--white);
-}
-
-.sideBarHeaderText > p:last-child {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.1px;
-    color: var(--text-secondry-gray);
-}
-.sideBarSection {
-    padding-left: 28px;
-    display: flex;
-    flex-direction: column;
-
-}
-.sideBarSectionAnalysis h4 {
-    color: #A5ACBA;
-    padding-bottom: 28px;
-    
-}
-.sideMenuSection {
-    margin-bottom: 40px;
-}
-.sideMenuSection li {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
-.sideMenuSection ul {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-}
- .sideMenuSection ul a {
-    width: 157px;
-    display:block;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.1px;
-    color: #A5ACBA;
- }
-
- .sideMenuSection li {
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.1px;
-    color: #A5ACBA;
- }
- .sideMenuSection:last-child {
-    margin-bottom: 28px;
- }
-
- .sideMenuSection ul li p {
-    color: var(--white);
-    background-color: var(--primary-blue);
-    border-radius: 20px;
-    width: 21px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    padding: 0px 6px;
- }
-.sideBarSectionEnd{
-  position: absolute;
-  bottom: 0;
- }
-
-.content {
-    background-color: #FAFBFC;;
-}
 
 @media (max-width: 768px) {
     .graphicChardTextDesktop {
