@@ -71,6 +71,7 @@ h5 {
     padding: 10px 16px;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
     border-radius: 5px;
+    border: 1px solid var(--primary-blue);
     background: var(--primary-blue);
     color: #fff;
     display: inline-block;
@@ -78,6 +79,7 @@ h5 {
 }
 
 .btnWhite {
+    border: 1px solid #DAE0E6;
     background-color: var(--white);
     color: var(--text-darkgary);
 }
@@ -99,6 +101,107 @@ span {
     color: var(--primary-red);
 }
 
+body {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    
+}
+
+
+.sideBar {
+    width: 280px;
+    height: 1460px;
+    background: var(--bg-dark-blue); 
+}
+
+.sideBarHeader {
+    display: flex;
+    gap: 12px;
+    background-color: var(--border-dark-blue);
+    padding: 8px 16px;
+    border: 1px solid #252D3C;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    border-radius: 5px;
+    margin: 16px 28px 28px;
+}
+
+.sideBarHeaderText > p:first-child{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #F9F9F9;
+}
+
+.sideBarHeaderText > p:last-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    color: #A5ACBA;
+}
+.sideBarSection {
+    padding-left: 28px;
+
+}
+.sideBarSectionAnalysıs h4 {
+    color: #A5ACBA;
+    padding-bottom: 28px;
+    
+}
+.sideMenuSection {
+    padding-bottom: 40px;
+}
+.sideMenuSection li {
+    display: flex;
+    gap: 12px;
+}
+ .sideMenuSection ul a {
+    display:block;
+ }
+ .sideMenuSection li {
+ 
+    padding-bottom: 28px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: #A5ACBA;
+ }
+
+ .sideMenuSection ul li p {
+    color: var(--white);
+    background-color: var(--primary-blue);
+    border-radius: 20px;
+    width: 21px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 6px;
+ }
+
+
+ 
+ /* .bg{
+    background-color:#333B48;
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 28px;
+gap: 12px;
+isolation: isolate;
+
+
+ } */
+
+ /* .sideMenuSection ul li:first-child {
+    background-color:#333B48;
+ } */
+
+
+
+
+.content {
+    background-color: #FAFBFC;;
+}
 
 
 
