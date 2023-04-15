@@ -463,6 +463,25 @@ tbody td:last-child a {
     padding: 10px;
 }
 
+
+.tableFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-top: 1px solid var(--border-secondry-gray);
+}
+
+.tableFooter .pageNumbers a{
+    padding: 0px 16px;
+}
+
+.tableFooter .prev,
+.tableFooter .next {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 /* allData END */
 body {
     display: grid;
