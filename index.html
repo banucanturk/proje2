@@ -1,23 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/reset.css?v=1"/>
-  <link rel="stylesheet" href="assets/css/dashboard.css?v=1"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/reset.css?v=1" />
+  <link rel="stylesheet" href="assets/css/dashboard.css?v=1" />
   <title>Dashboard</title>
 </head>
+
 <body>
-<div class="div">
-  <a href="#" class="btnSecondry ">Add item</a>
-  
-</div>  
+
+  <div class="sidebar"></div>
+  <div class="content">
+    <!-- sectionHeader -->
+    <div class="sectionHeader">
+      <div class="breadcrumb">
+        <div class="breadcrumbBase">
+          <a href="#"></a>Home <img src="assets/images/icons/chevron.svg" alt="">
+        </div>
+        <div class="breadcrumbBase"><a href="#"></a>Settings <img src="assets/images/icons/chevron.svg" alt=""></div>
+        <div class="breadcrumbBase"><a href="#"></a>General </div>
+      </div>
+      <div class="sectionHeaderContent">
+        <div class="sectionHeaderContentText">
+          <h2>Hey there, Brian Ford!</h2>
+          <p class="textLRegular">Welcome back, we're happy to have you here!</p>
+        </div>
+        <div class="sectionHeaderContentButton">
+          <a href="#" class="btnPrimary btnWhite">Edit section</a>
+          <a href="#" class="btnPrimary">Add item</a>
+        </div>
+      </div>
+    </div>
+    <!-- cards -->
+    <div class="cards">
+      <div class="card">
+        <img src="assets/images/icons/card1.svg" alt="">
+        <div class="cardContent">
+          <p class="HeadlineXSDesktopSemibold">$27.340</p>
+          <p class="textSMedium">Total Expenses</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/icons/card2.svg" alt="">
+        <div class="cardContent">
+          <p class="HeadlineXSDesktopSemibold">$238.33</p>
+          <p class="textSMedium">Total Expenses</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/images/icons/card3.svg" alt="">
+        <div class="cardContent">
+          <p class="HeadlineXSDesktopSemibold">$21.574</p>
+          <p class="textSMedium">Total Expenses</p>
+        </div>
+      </div>
+      <!-- dashboardAlert -->
+      <div class="dashboardAlert">
+        <img src="assets/images/icons/alert.svg" alt="">
+        <div class="alertContent">
+          <h5>We'd like to propose some improvements</h5>
+          <p>We analyzed your account's performance and here's what we found out</p>
+        </div>
+        <a href="#" class="btnPrimary btnArrow">Continue <img src="assets/images/icons/rightArrow.svg" alt=""></a>
+      </div>
+
+
+    </div>
+
+  </div>
 
 
 
@@ -25,6 +81,7 @@
 
 
 
-    <script src="assets/script/script.js"></script>
+  <script src="assets/script/script.js"></script>
 </body>
+
 </html>
