@@ -389,17 +389,21 @@ span {
 }
 
 /* allData END */
+
+/* sideBar start */
+
 body {
     display: grid;
     grid-template-columns: 280px 1fr;
-    
 }
 
-
+.sideBarMobile {
+    display: none;
+}
 .sideBar {
     width: 280px;
     height: 1460px;
-    background: var(--bg-dark-blue); 
+    background: var(--bg-dark-blue);
     position: relative;
 }
 
@@ -420,8 +424,11 @@ body {
     letter-spacing: -0.1px;
     color: #F9F9F9;
 }
-.overview {
-    color: var(--white);
+.active  {
+    background: #333B48;
+    padding: 12px 28px;
+    margin-left: -28px;
+
 }
 
 .sideBarHeaderText > p:last-child {
@@ -438,9 +445,9 @@ body {
 
 }
 .sideBarSectionAnalysis h4 {
-    color: #A5ACBA;
-    padding-bottom: 28px;
-    
+    color: var(--text-secondry-gray);
+    margin-bottom: 28px;
+
 }
 .sideMenuSection {
     margin-bottom: 40px;
@@ -458,10 +465,7 @@ body {
  .sideMenuSection ul a {
     width: 157px;
     display:block;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.1px;
-    color: #A5ACBA;
+    color: var(--text-secondry-gray);
  }
 
  .sideMenuSection li {
@@ -489,11 +493,42 @@ body {
   bottom: 0;
  }
 
+ /* sideBar end */
+
 .content {
     background-color: #FAFBFC;;
 }
 
 @media (max-width: 768px) {
+    /* sideBar start */
+
+    body {
+       display: flex;
+       flex-direction: column;
+    }
+    .sideBarMobile {
+        background: #151B28;
+        padding: 20px;
+        display:inline-block;
+        width: 100%;
+    }
+    .sideBarMobileLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sideBarMobileLogo img {
+        height: 23px;
+    } 
+    .sideBarMobileLogo a {
+        display: block;
+    }
+    .sideBar {
+    display: none;
+
+     /* sideBar end */
+
+    }
     .graphicChardTextDesktop {
         display: none;
     }
