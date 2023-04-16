@@ -154,20 +154,26 @@
     <!-- sectionHeader START -->
     <section class="sectionHeader">
       <div class="breadcrumb">
-        <div class="breadcrumbBase">
-          <a href="#"></a>Home <img src="assets/images/icons/chevron.svg" alt="">
-        </div>
-        <div class="breadcrumbBase"><a href="#"></a>Settings <img src="assets/images/icons/chevron.svg" alt=""></div>
-        <div class="breadcrumbBase"><a href="#"></a>General </div>
+        <div class="breadcrumbBase breadcrumbBaseDesktop"><a href="#"></a>Home <img
+            src="assets/images/icons/chevronRight.svg" alt=""></div>
+        <div class="breadcrumbBase breadcrumbBaseDesktop"><a href="#"></a>Settings <img
+            src="assets/images/icons/chevronRight.svg" alt=""></div>
+        <div class="breadcrumbBase breadcrumbBaseDesktop"><a href="#"></a>General </div>
+        <div class="breadcrumbBase breadcrumbBaseMobile"><a href="#"></a><img src="assets/images/icons/chevronLeft.svg"
+            alt="">Back </div>
       </div>
       <div class="sectionHeaderContent">
         <div class="sectionHeaderContentText">
-          <h2>Hey there, Brian Ford!</h2>
+          <h1 class="pageHeadlineDesktop">Hey there, Brian Ford!</h1>
+          <h2 class="pageHeadlineMobile">Hey there, Brian Ford!</h2>
           <p class="textLRegular">Welcome back, we're happy to have you here!</p>
         </div>
         <div class="sectionHeaderContentButton">
-          <a href="#" class="btnPrimary btnWhite">Edit section</a>
-          <a href="#" class="btnPrimary">Add item</a>
+          <div class="btnDesktop">
+            <a href="#" class="btnPrimary btnWhite btnDesktopItem">Edit section</a>
+            <a href="#" class="btnPrimary btnDesktopItem">Add item</a>
+          </div>
+          <a href="#" class="btnPrimary btnWhite btnMobile"><img src="assets/images/icons/dotMenu.svg" alt=""></a>
         </div>
       </div>
     </section>
@@ -204,23 +210,25 @@
 
     <!-- dashboardAlert START -->
     <section class="dashboardAlert">
-      <img src="assets/images/icons/alert.svg" alt="">
       <div class="alertContent">
-        <h5>We'd like to propose some improvements</h5>
-        <p>We analyzed your account's performance and here's what we found out</p>
+        <img src="assets/images/icons/alert.svg" alt="">
+        <div class="alertContentText">
+          <h5>We'd like to propose some improvements</h5>
+          <p class="textSMedium">We analyzed your account's performance and here's what we found out</p>
+        </div>
       </div>
-      <a href="#" class="btnPrimary btnArrow">Continue <img src="assets/images/icons/rightArrow.svg" alt=""></a>
+      <a href="#" class="btnPrimary btnArrow btnDesktop">Continue <img src="assets/images/icons/rightArrow.svg" alt=""></a>
     </section>
     <!-- dashboardAlert END -->
 
     <!-- graphic START -->
     <section class="graphic">
       <div class="graphicTopicMobile">
-        <h2>Revenue</h2>
+        <h4>Revenue</h4>
         <img src="assets/images/icons/dotMenu.svg" alt="">
       </div>
       <div class="graphicTopicDesktop">
-        <h2>Advanced Graphic</h2>
+        <h4>Advanced Graphic</h4>
       </div>
       <div class="graphicChard">
 

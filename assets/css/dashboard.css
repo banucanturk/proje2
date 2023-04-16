@@ -38,11 +38,19 @@
 }
 
 
-h2 {
+h1 {
     font-weight: 600;
     font-size: 28px;
     line-height: 38px;
     letter-spacing: -0.01em;
+    color: var(--text-darkgray);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
     color: var(--text-darkgray);
 }
 
@@ -165,12 +173,12 @@ h5 {
     padding: 10px 16px;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
     border-radius: 5px;
-    border: 1px solid var(--primary-blue);
     background: var(--primary-blue);
     color: #fff;
     display: inline-block;
     text-decoration: none;
     border: 1px solid transparent;
+    text-align: center;
 }
 
 .btnWhite {
@@ -182,6 +190,7 @@ h5 {
 .btnArrow {
     display: flex;
     gap: 6px;
+    align-items: center;
 }
 
 body {
@@ -191,9 +200,10 @@ body {
 
 /*-------------------- sideBar START ---------------------*/
 
-.containerSideBar{
+.containerSideBar {
     padding: 16.24px 28px;
     background: var(--bg-dark-blue);
+    border-right: 1px solid #2E3545
 }
 
 .sideBar {
@@ -206,7 +216,6 @@ body {
     gap: 12px;
     background-color: var(--border-dark-blue);
     padding: 8px 16px;
-    border: 1px solid #252D3C;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
     border-radius: 5px;
     margin-bottom: 28px;
@@ -277,7 +286,7 @@ body {
     padding: 0px 6px;
 }
 
-.sideBarSectionStart{
+.sideBarSectionStart {
     margin-bottom: 40px;
 }
 
@@ -311,13 +320,16 @@ body {
 
 .breadcrumbBase {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 4px;
 }
 
-.breadcrumbBase:last-child {
+.breadcrumbBaseDesktop:last-child {
     color: var(--primary-blue);
+}
+
+.breadcrumbBaseMobile {
+    display: none;
 }
 
 .sectionHeaderContent {
@@ -331,10 +343,25 @@ body {
     align-items: flex-start;
 }
 
+.pageHeadlineMobile {
+    display: none;
+}
+
 .sectionHeaderContentButton {
     display: flex;
     align-items: flex-start;
+    gap: 24px;
+}
+
+.btnDesktop {
+    display: flex;
+    justify-content: center;
     gap: 12px;
+}
+
+.btnMobile {
+    padding: 10px 10px;
+    display: none;
 }
 
 /*-- sectionHeader END --*/
@@ -394,16 +421,20 @@ span {
 
 .dashboardAlert {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 16px 20px;
-    gap: 16px;
     margin-bottom: 32px;
     background: var(--secondry-blue);
     border: 1px solid var(--primary-blue);
     border-radius: 10px;
 }
-.dashboardAlert a{
+
+.alertContent{
+    display: flex;
+    gap: 16px;
+}
+
+.dashboardAlert a {
     margin-left: auto;
 }
 
@@ -512,7 +543,120 @@ span {
 /*-------------------- containerMain END ---------------------*/
 
 
+
 @media (max-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 64px 1fr;
+    }
+
+    /*-------------------- sideBar START ---------------------*/
+
+    .containerSideBar {
+        padding: auto 16px;
+        background: #151B28;
+        border-right: none;
+        border-bottom: 1px solid #2E3545;
+    }
+
+    .sideBar {
+        display: none;
+    }
+
+    /*-------------------- sideBar END ---------------------*/
+
+
+    /*-------------------- containerMain START ---------------------*/
+
+    .containerMain {
+        padding: 12px 24px;
+    }
+
+    /*-- sectionHeader START --*/
+
+    .sectionHeader {
+        gap: 16px;
+    }
+
+    .breadcrumb {
+        color: var(--text-darkgray);
+    }
+
+    .breadcrumbBaseDesktop {
+        display: none;
+    }
+
+    .breadcrumbBaseMobile {
+        display: flex;
+    }
+
+    .sectionHeaderContent {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .pageHeadlineDesktop {
+        display: none;
+    }
+
+    .pageHeadlineMobile {
+        display: block;
+    }
+
+    .sectionHeaderContentButton {
+        width: 100%;
+    }
+
+    .btnDesktop {
+        width: 100%;
+    }
+
+    .btnDesktopItem {
+        width: 100%;
+    }
+
+    .btnMobile {
+        display: block;
+    }
+
+    /*-- sectionHeader END --*/
+
+    /*-- lossGrowthCards START --*/
+
+    .lossGrowthCards {
+        flex-wrap: wrap;
+    }
+
+    /*-- lossGrowthCards END --*/
+
+    /*-- dashboardAlert START --*/
+
+    .dashboardAlert {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+
+    /*-- dashboardAlert END --*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .graphicChardTextDesktop {
         display: none;
     }
@@ -536,4 +680,20 @@ span {
     .graphicBottom p {
         display: none;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
