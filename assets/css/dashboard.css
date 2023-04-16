@@ -361,6 +361,10 @@ h5 {
     display: inline-block;
 }
 
+.chartMobile {
+    display: none !important;
+}
+
 /* allData START */
 .containerInsideData {
     border: 1px solid var(--border-secondry-gray);
@@ -748,5 +752,13 @@ body {
 
     .graphicBottom p {
         display: none;
+    }
+
+    .chartDesktop {
+        display: none !important;
+    }
+
+    .chartMobile {
+        display: block !important;
     }
 }
