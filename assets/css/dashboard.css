@@ -375,17 +375,27 @@ h5 {
 }
 
 .allData .data {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 24px;
-    justify-content: space-between;
 }
 
-.tableHeader {
+.tableHeader,
+.chartHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
     padding: 16px 24px;
+}
+
+.chartHeader {
+    gap: 4px;
+    padding: 16px 20px;
+}
+
+.data .table {
+    display: grid;
 }
 
 table tr {
@@ -480,6 +490,27 @@ tbody td:last-child a {
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+.chartFooter .textSSemibold {
+    width: 211px;
+}
+
+.chartFooter {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 16px 20px;
+    border-top: 1px solid var(--border-secondry-gray);
+}
+
+
+.chartFooter .btnWhite {
+    border: 0px;
+    color: var(--primary-blue);
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 
 /* allData END */
