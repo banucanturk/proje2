@@ -434,10 +434,6 @@ body {
     color: var(--text-white);
 }
 
-.active a {
-    display: block;
-    color: var(--text-white);
-}
 .sideBarSectionAnalysis {
     padding: 10px 28px;
 }
@@ -450,18 +446,14 @@ body {
 }
 
 .sideBarSection {
-    /* padding-left: 28px; */
     display: flex;
     flex-direction: column;
-
+    height: 100%;
+    justify-content: space-between;
 }
 
 .sideBarSectionAnalysis h4 {
     color: var(--text-secondry-gray);
-}
-
-.sideMenuSection {
-    margin-bottom: 40px;
 }
 
 .sideMenuSection li {
@@ -473,7 +465,6 @@ body {
 .sideMenuSection ul {
     display: flex;
     flex-direction: column;
-    /* gap: 28px; */
 }
 
 .sideMenuSection ul a {
