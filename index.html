@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="assets/css/reset.css?v=1" />
   <link rel="stylesheet" href="assets/css/dashboard.css?v=1" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
   <title>Dashboard</title>
 </head>
 
@@ -19,28 +18,38 @@
   <!-------------------- containerSideBar START -------------------->
   <section class="containerSideBar">
 
-    <!-- sideBar START -->
-    <section class="sideBar">
+    <!--sideBar start-->
 
-      <div class="sideBarHeader">
-        <img src="assets/images/svg/icons/users/pageUser.svg" alt="Header Avatar">
-        <div class="sideBarHeaderText">
-          <p class="textLSemibold">Brian Ford</p>
-          <p class="textSMedium">brianford@lok.com</p>
-        </div>
+  <div class="sideBar">
+
+    <!--sideBarHeader start -->
+
+    <div class="sideBarHeader">
+      <img src="assets/images/svg/icons/users/pageUser.svg" alt="Header Avatar">
+      <div class="sideBarHeaderText">
+        <p>Brian Ford</p>
+        <p>brianford@lok.com</p>
       </div>
+    </div>
 
+    <!--sideBarHeader end -->
 
-      <div class="sideBarSection">
+    <!--sideBarSection start -->
 
-        <div class="sideBarSectionStart">
+    <div class="sideBarSection">
+
+      <!--sideBarSectionStart start -->
+
+      <div class="sideBarSectionStart">
+        <div class="sideBarSectionStartMiddle">
 
           <div class="sideBarSectionAnalysis">
-            <h6 class="UPPERCASESemiboldL">ANALYSIS</h6>
+
+            <h4>ANALYSIS</h4>
           </div>
 
-
           <div class="sideMenuSection">
+
             <ul>
               <li class>
                 <img src="assets/images/svg/icons/sidebar/home.svg" alt="Home">
@@ -59,19 +68,24 @@
                 <a href="#">Analyze</a>
               </li>
             </ul>
-          </div>
 
+
+          </div>
         </div>
 
+        <!--sideBarSectionStart end -->
+
+
+        <!--sideBarSectionMiddle start-->
 
         <div class="sideBarSectionMiddle">
 
           <div class="sideBarSectionAnalysis">
-            <h6 class="UPPERCASESemiboldL">DATA MANAGEMENT</h6>
+            <h4>DATA MANAGEMENT</h4>
           </div>
 
-
           <div class="sideMenuSection">
+
             <ul>
               <li>
                 <img src="assets/images/svg/icons/sidebar/earts.svg" alt="">
@@ -89,53 +103,63 @@
               <li>
                 <img src="assets/images/svg/icons/sidebar/data.svg" alt="">
                 <a href="#">Live Data Feed</a>
-                <img src="assets/images/svg/ok.svg" alt="">
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-
-        <div class="sideBarSectionEnd">
-
-          <div class="sideBarSectionAnalysis">
-            <h6 class="UPPERCASESemiboldL">ADMINISTRATION</h6>
-          </div>
-
-
-          <div class="sideMenuSection">
-            <ul>
-              <li>
-                <img src="assets/images/svg/icons/sidebar/flag.svg" alt="">
-                <a href="#">Updates </a>
-              </li>
-              <li>
-                <img src="assets/images/svg/icons/sidebar/star.svg" alt="">
-                <a href="#">Intergrations</a>
-                <img src="assets/images/svg/ok.svg" alt="">
-              </li>
-              <li>
-                <img src="assets/images/svg/icons/sidebar/headphones.svg" alt="">
-                <a href="#">Support</a>
-              </li>
-              <li>
-                <img src="assets/images/svg/icons/sidebar/user.svg" alt="">
-                <a href="#">Account</a>
                 <img src="assets/images/svg/icons/arrow/chevronDown.svg" alt="">
               </li>
-              <li>
-                <img src="assets/images/svg/icons/sidebar/exit.svg" alt="">
-                <a href="#">Sign Out</a>
-              </li>
             </ul>
-          </div>
 
+          </div>
+        </div>
+      </div>
+      <!--sideBarSectionMiddle end-->
+
+      <!--sideBarSectionEnd start-->
+
+      <div class="sideBarSectionEnd">
+        <div class="sideBarSectionAnalysis">
+          <h4>ADMINISTRATION</h4>
         </div>
 
-      </div>
+        <div class="sideMenuSection">
 
-    </section>
+          <ul>
+            <li>
+              <img src="assets/images/svg/icons/sidebar/flag.svg" alt="">
+              <a href="#">Updates </a>
+            </li>
+            <li>
+              <img src="assets/images/svg/icons/sidebar/star.svg" alt="">
+              <a href="#">Intergrations</a>
+              <img src="assets/images/svg/icons/arrow/chevronDown.svg" alt="">
+            </li>
+            <li>
+              <img src="assets/images/svg/icons/sidebar/headphones.svg" alt="">
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <img src="assets/images/svg/icons/sidebar/user.svg" alt="">
+              <a href="#">Account</a>
+              <img src="assets/images/svg/icons/arrow/chevronDown.svg" alt="">
+            </li>
+            <li>
+              <img src="assets/images/svg/icons/sidebar/exit.svg" alt="">
+              <a href="#">Sign Out</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <!--sideBarSectionEnd end -->
+  </div>
+
+  <div class="sideBarMobile">
+    <div class="sideBarMobileLogo">
+      <img src="assets/images/svg/sideBarLookscout.png" alt="Lookscout Logo">
+      <a href="#"><img src="assets/images/svg/hamburgerMenu.svg" alt="Açılır Kapanır Menü"></a>
+    </div>
+  </div>
+  
     <!-- sideBar END -->
 
   </section>
@@ -258,7 +282,7 @@
         <picture>
           <source media="(min-width:768px)" srcset="assets/images/png/chard-base.png">
           <img src="assets/images/png/chard-mobile.png" alt="chard">
-        </picture> -->
+        </picture>-->
 
         <canvas id="chartDesktop" class="chartDesktop"></canvas>
         <canvas id="chartMobile" class="chartMobile"></canvas>
@@ -274,258 +298,257 @@
     </section>
     <!-- graphic END -->
 
-    <!-- allData START -->
-    <section class="allData">
+        <!-- allData START -->
+        <section class="allData">
 
-      <!-- dataHeader START -->
-      <div class="dataHeader">
-        <h3>Brian Ford</h3>
-        <div class="dataHeaderButtons">
-          <a href="#" class="btnPrimary btnWhite">Edit section</a>
-          <a href="#" class="btnPrimary">Add item</a>
-        </div>
-      </div>
-      <!-- dataHeader END -->
+          <!-- dataHeader START -->
+          <div class="dataHeader">
+            <h3>Brian Ford</h3>
+            <div class="dataHeaderButtons">
+              <a href="#" class="btnPrimary btnWhite">Edit section</a>
+              <a href="#" class="btnPrimary">Add item</a>
+            </div>
+          </div>
+          <!-- dataHeader END -->
 
-      <!-- data START -->
-      <div class="data">
+          <!-- data START -->
+          <div class="data">
 
-        <div class="containerInsideData">
+            <div class="containerInsideData">
 
-          <!-- dataTable -->
-          <div class="dataTable">
+              <!-- dataTable -->
+              <div class="dataTable">
 
-            <div class="tableHeader">
-              <h5>Transactions</h5>
-              <a href="#"><img src="assets/images/svg/icons/dotMenu.svg" alt="detail button"></a>
+                <div class="tableHeader">
+                  <h5>Transactions</h5>
+                  <a href="#"><img src="assets/images/svg/icons/dotMenu.svg" alt="detail button"></a>
+                </div>
+
+                <table class="table">
+
+                  <thead>
+                    <tr>
+                      <th class="textXSMedium">Name</th>
+                      <th class="textXSMedium">Amount</th>
+                      <th class="textXSMedium">Date</th>
+                      <th class="textXSMedium">Account</th>
+                      <th>&nbsp;</th>
+                    </tr>
+                  </thead>
+    
+                  <tbody>
+    
+                    <tr>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/users/grand-rapids.svg" alt=""></a>
+                        <a href="#">
+                          <p class="textSMedium">Grand Rapids</p>
+                        </a>
+                      </td>
+                      <td>
+                        <p class="textSMedium priceProfit">+ 6,320.53</p>
+                      </td>
+                      <td>
+                        <p class="textSMedium date">Wed <time>1:00 pm</time></p>
+                      </td>
+                      <td class="account">
+                        <img src="assets/images/svg/icons/account/visa.svg" alt="visa">
+                        <div class="accountInfo">
+                          <p class="textSMedium">Visa 1234</p>
+                          <span class="textSMedium">Expires 24/2032</span>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
+                      </td>
+                    </tr>
+    
+                    <tr>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/users/bell-gardens.svg" alt=""></a>
+                        <a href="#">
+                          <p class="textSMedium">Bell Gardens</p>
+                        </a>
+                      </td>
+                      <td>
+                        <p class="textSMedium priceProfit">+ 6,471.39</p>
+                      </td>
+                      <td>
+                        <p class="textSMedium date">Wed <time>1:00 pm</time></p>
+                      </td>
+                      <td class="account">
+                        <img src="assets/images/svg/icons/account/google-pay.svg" alt="google-pay">
+                        <div class="accountInfo">
+                          <p class="textSMedium">Google Pay 1234</p>
+                          <span class="textSMedium">Expires 24/2032</span>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
+                      </td>
+                    </tr>
+    
+                    <tr>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/users/broomfield.svg" alt=""></a>
+                        <a href="#">
+                          <p class="textSMedium">Broomfield</p>
+                        </a>
+                      </td>
+                      <td>
+                        <p class="textSMedium priceLoss">- 2,223.9</p>
+                      </td>
+                      <td>
+                        <p class="textSMedium date">Wed <time>7:20 pm</time></p>
+                      </td>
+                      <td class="account">
+                        <img src="assets/images/svg/icons/account/paypal.svg" alt="paypal">
+                        <div class="accountInfo">
+                          <p class="textSMedium">PayPal 1234</p>
+                          <span class="textSMedium">Expires 24/2032</span>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
+                      </td>
+                    </tr>
+    
+                    <tr>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/users/yakima.svg" alt=""></a>
+                        <a href="#">
+                          <p class="textSMedium">Yakima</p>
+                        </a>
+                      </td>
+                      <td>
+                        <p class="textSMedium priceProfit">+ 7,344.50</p>
+                      </td>
+                      <td>
+                        <p class="textSMedium date">Wed <time>1:00 pm</time></p>
+                      </td>
+                      <td class="account">
+                        <img src="assets/images/svg/icons/account/maestro.svg" alt="maestro">
+                        <div class="accountInfo">
+                          <p class="textSMedium">Maestro 1234</p>
+                          <span class="textSMedium">Expires 24/2032</span>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
+                      </td>
+                    </tr>
+    
+                    <tr>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/users/springfield.svg" alt=""></a>
+                        <a href="#">
+                          <p class="textSMedium">Springfield</p>
+                        </a>
+                      </td>
+                      <td>
+                        <p class="textSMedium priceLoss">- 6,157.14</p>
+                      </td>
+                      <td>
+                        <p class="textSMedium date">Wed <time>7:20 pm</time></p>
+                      </td>
+                      <td class="account">
+                        <img src="assets/images/svg/icons/account/apple-pay.svg" alt="apple-pay">
+                        <div class="accountInfo">
+                          <p class="textSMedium">Apple Pay 1234</p>
+                          <span class="textSMedium">Expires 24/2032</span>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
+                      </td>
+                    </tr>
+    
+                  </tbody>
+    
+                </table>
+
+                <div class="tableFooter">
+
+                  <div class="prev">
+                    <a href="#"><img src="assets/images/svg/icons/arrow/leftArrow.svg" alt=""></a>
+                    <a href="#" class="textSMedium">Priv</a>
+                  </div>
+    
+                  <div class="pageNumbers">
+                    <a href="#" class="textSMedium">1</a>
+                    <a href="#" class="textSMedium">2</a>
+                    <a href="#" class="textSMedium"><img src="assets/images/svg/icons/dotPageNumbe.svg" alt=""></a>
+                    <a href="#" class="textSMedium">5</a>
+                    <a href="#" class="textSMedium">6</a>
+                  </div>
+    
+                  <div class="next">
+                    <a href="#" class="textSMedium">Next</a>
+                    <a href="#"><img src="assets/images/svg/icons/arrow/rightArrowGray.svg" alt=""></a>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <!-- dataTable end-->
+
             </div>
 
-            <table class="table">
 
-              <thead>
-                <tr>
-                  <th class="textXSMedium">Name</th>
-                  <th class="textXSMedium">Amount</th>
-                  <th class="textXSMedium">Date</th>
-                  <th class="textXSMedium">Account</th>
-                  <th>&nbsp;</th>
-                </tr>
-              </thead>
+            <div class="containerInsideData">
 
-              <tbody>
+              <!-- dataChart -->
+              <div class="dataChart">
+                <div class="chartHeader">
+                  <h5>Your Wallet</h5>
+                  <a href="#"><img src="assets/images/svg/icons/dotMenu.svg" alt="detail button"></a>
+                </div>
 
-                <tr>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/users/grand-rapids.svg" alt=""></a>
-                    <a href="#">
-                      <p class="textSMedium">Grand Rapids</p>
-                    </a>
-                  </td>
-                  <td>
-                    <p class="textSMedium priceProfit">+ 6,320.53</p>
-                  </td>
-                  <td>
-                    <p class="textSMedium date">Wed <time>1:00 pm</time></p>
-                  </td>
-                  <td class="account">
-                    <img src="assets/images/svg/icons/account/visa.svg" alt="visa">
-                    <div class="accountInfo">
-                      <p class="textSMedium">Visa 1234</p>
-                      <span class="textSMedium">Expires 24/2032</span>
-                    </div>
-                  </td>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/users/bell-gardens.svg" alt=""></a>
-                    <a href="#">
-                      <p class="textSMedium">Bell Gardens</p>
-                    </a>
-                  </td>
-                  <td>
-                    <p class="textSMedium priceProfit">+ 6,471.39</p>
-                  </td>
-                  <td>
-                    <p class="textSMedium date">Wed <time>1:00 pm</time></p>
-                  </td>
-                  <td class="account">
-                    <img src="assets/images/svg/icons/account/google-pay.svg" alt="google-pay">
-                    <div class="accountInfo">
-                      <p class="textSMedium">Google Pay 1234</p>
-                      <span class="textSMedium">Expires 24/2032</span>
-                    </div>
-                  </td>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/users/broomfield.svg" alt=""></a>
-                    <a href="#">
-                      <p class="textSMedium">Broomfield</p>
-                    </a>
-                  </td>
-                  <td>
-                    <p class="textSMedium priceLoss">- 2,223.9</p>
-                  </td>
-                  <td>
-                    <p class="textSMedium date">Wed <time>7:20 pm</time></p>
-                  </td>
-                  <td class="account">
-                    <img src="assets/images/svg/icons/account/paypal.svg" alt="paypal">
-                    <div class="accountInfo">
-                      <p class="textSMedium">PayPal 1234</p>
-                      <span class="textSMedium">Expires 24/2032</span>
-                    </div>
-                  </td>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/users/yakima.svg" alt=""></a>
-                    <a href="#">
-                      <p class="textSMedium">Yakima</p>
-                    </a>
-                  </td>
-                  <td>
-                    <p class="textSMedium priceProfit">+ 7,344.50</p>
-                  </td>
-                  <td>
-                    <p class="textSMedium date">Wed <time>1:00 pm</time></p>
-                  </td>
-                  <td class="account">
-                    <img src="assets/images/svg/icons/account/maestro.svg" alt="maestro">
-                    <div class="accountInfo">
-                      <p class="textSMedium">Maestro 1234</p>
-                      <span class="textSMedium">Expires 24/2032</span>
-                    </div>
-                  </td>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/users/springfield.svg" alt=""></a>
-                    <a href="#">
-                      <p class="textSMedium">Springfield</p>
-                    </a>
-                  </td>
-                  <td>
-                    <p class="textSMedium priceLoss">- 6,157.14</p>
-                  </td>
-                  <td>
-                    <p class="textSMedium date">Wed <time>7:20 pm</time></p>
-                  </td>
-                  <td class="account">
-                    <img src="assets/images/svg/icons/account/apple-pay.svg" alt="apple-pay">
-                    <div class="accountInfo">
-                      <p class="textSMedium">Apple Pay 1234</p>
-                      <span class="textSMedium">Expires 24/2032</span>
-                    </div>
-                  </td>
-                  <td>
-                    <a href="#"><img src="assets/images/svg/icons/arrow/chevronRightBlack.svg" alt=""></a>
-                  </td>
-                </tr>
-
-              </tbody>
-
-            </table>
-
-            <div class="tableFooter">
-
-              <div class="prev">
-                <a href="#"><img src="assets/images/svg/icons/arrow/leftArrow.svg" alt=""></a>
-                <a href="#" class="textSMedium">Priv</a>
               </div>
 
-              <div class="pageNumbers">
-                <a href="#" class="textSMedium">1</a>
-                <a href="#" class="textSMedium">2</a>
-                <a href="#" class="textSMedium"><img src="assets/images/svg/icons/dotPageNumbe.svg" alt=""></a>
-                <a href="#" class="textSMedium">5</a>
-                <a href="#" class="textSMedium">6</a>
-              </div>
+              <div class="rowContainer">
 
-              <div class="next">
-                <a href="#" class="textSMedium">Next</a>
-                <a href="#"><img src="assets/images/svg/icons/arrow/rightArrowGray.svg" alt=""></a>
+                <ul class="contentText">
+                  <li class="textMMedium">
+                    <p class="circle"></p>
+                    <p class="text">Buildings</p>
+                    <p class="price">$175</p>
+                  </li>
+                  <li class="textMMedium">
+                    <p class="circle"></p>
+                    <p class="text">Travel</p>
+                    <p class="price">$254</p>
+                  </li>
+                  <li class="textMMedium">
+                    <p class="circle"></p>
+                    <p class="text">Essentials</p>
+                    <p class="price">$884</p>
+                  </li>
+                </ul>
+
               </div>
+              <div class="chartFooter">
+                <p class="textSSemibold">Total of all counterparty balances</p>
+                <a class="btnOpen textButtonSemiboldSmall" href="#">Open<img src="assets/images/svg/icons/externalLink.svg"
+                    alt="open"></a>
+                </a>
+              </div>
+              <!-- dataChart end-->
 
             </div>
 
           </div>
-          <!-- dataTable end-->
+          <!-- data END -->
 
-        </div>
-
-
-        <div class="containerInsideData">
-
-          <!-- dataChart -->
-          <div class="dataChart">
-            <div class="chartHeader">
-              <h5>Your Wallet</h5>
-              <a href="#"><img src="assets/images/svg/icons/dotMenu.svg" alt="detail button"></a>
-            </div>
-
-          </div>
-
-          <div class="rowContainer">
-
-            <ul class="contentText">
-              <li class="textMMedium">
-                <p class="circle"></p>
-                <p class="text">Buildings</p>
-                <p class="price">$175</p>
-              </li>
-              <li class="textMMedium">
-                <p class="circle"></p>
-                <p class="text">Travel</p>
-                <p class="price">$254</p>
-              </li>
-              <li class="textMMedium">
-                <p class="circle"></p>
-                <p class="text">Essentials</p>
-                <p class="price">$884</p>
-              </li>
-            </ul>
-
-          </div>
-
-          <div class="chartFooter">
-            <p class="textSSemibold">Total of all counterparty balances</p>
-            <a class="btnOpen textButtonSemiboldSmall" href="#">Open<img src="assets/images/svg/icons/externalLink.svg"
-                alt="open"></a>
-            </a>
-          </div>
-          <!-- dataChart end-->
-
-        </div>
-
-      </div>
-      <!-- data END -->
+        </section>
+        <!-- allData END -->
 
     </section>
-    <!-- allData END -->
-
-  </section>
-  <!-------------------- containerMain END -------------------->
+    <!-------------------- containerMain END -------------------->
 
 
 
-  <script src="assets/script/script.js"></script>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

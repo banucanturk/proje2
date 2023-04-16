@@ -30,13 +30,11 @@
     --text-white: #F9F9F9;
 }
 
-
 * {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     letter-spacing: -0.1px;
 }
-
 
 h1 {
     font-weight: 600;
@@ -73,7 +71,6 @@ h5 {
     line-height: 22px;
     color: var(--text-darkgray);
 }
-
 
 /* Text */
 .textXSRegular {
@@ -167,7 +164,6 @@ h5 {
     line-height: 20px;
 }
 
-
 /* Button */
 
 .btnPrimary {
@@ -211,15 +207,21 @@ body {
 
 /*-------------------- sideBar START ---------------------*/
 
-.containerSideBar {
-    padding: 16.24px 28px;
-    background: var(--bg-desktop-sidebar);
-    border-right: 1px solid var(--border-dark-blue);
+body {
+    display: grid;
+    grid-template-columns: 280px auto;
+}
+
+.sideBarMobile {
+    display: none;
 }
 
 .sideBar {
-    height: 1460px;
-    position: relative;
+    height: 100%;
+    width: 280px;
+    background: var(--bg-desktop-sidebar);
+    position: fixed;
+    overflow-y: scroll;
 }
 
 .sideBarHeader {
@@ -227,62 +229,82 @@ body {
     gap: 12px;
     background-color: var(--border-dark-blue);
     padding: 8px 16px;
+    border: 1px solid #252D3C;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
     border-radius: 5px;
-    margin-bottom: 28px;
+    margin: 16px 28px 28px;
 }
 
-.sideBarHeaderText .textSMedium {
+.sideBarHeaderText>p:first-child {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #F9F9F9;
+}
+
+.active {
+    background: #333B48;
+    padding: 12px 28px;
+    color: var(--text-white);
+}
+
+.sideBarSectionAnalysis {
+    padding: 10px 28px;
+}
+
+.sideBarHeaderText>p:last-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
     color: var(--text-secondry-gray);
 }
 
 .sideBarSection {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
-.sideBarSectionAnalysis h6 {
+.sideBarSectionAnalysis h4 {
     color: var(--text-secondry-gray);
-    padding-bottom: 28px;
-}
-
-.sideMenuSection ul {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
 }
 
 .sideMenuSection li {
     display: flex;
     gap: 12px;
     align-items: flex-start;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: -0.1px;
-    color: var(--text-secondry-gray);
 }
 
-.sideMenuSection li:hover a {
-    color: var(--white);
-}
-
-.sideMenuSection li:hover img {
-    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(180deg) brightness(104%) contrast(101%);
-}
-
-.sideMenuSection li:hover {
-    padding: 16.24px 0px;
-    border-left: 3px solid #F9F9F9;
-    background: #333B48;
+.sideMenuSection ul {
+    display: flex;
+    flex-direction: column;
 }
 
 .sideMenuSection ul a {
     width: 157px;
     display: block;
+    color: var(--text-secondry-gray);
+}
+
+.sideMenuSection li {
+    padding: 10px 26px;
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.1px;
     color: var(--text-secondry-gray);
+}
+
+.sideMenuSection img {
+    height: 22px;
+    width: 22px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.sideMenuSection:last-child {
+    margin-bottom: 28px;
 }
 
 .sideMenuSection ul li p {
@@ -296,13 +318,25 @@ body {
     padding: 0px 6px;
 }
 
-.sideBarSectionStart {
-    margin-bottom: 40px;
+.sideBarSectionEnd {
+
+    bottom: 0;
 }
 
-.sideBarSectionEnd {
-    position: absolute;
-    bottom: 0;
+.sideBar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 50px;
+}
+
+.sideBar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: var(--primary-blue);
 }
 
 /*-------------------- sideBar END ---------------------*/
@@ -314,7 +348,6 @@ body {
     background: #FAFBFC;
 }
 
-/*-- sectionHeader START --*/
 
 .sectionHeader {
     display: flex;
@@ -366,7 +399,7 @@ body {
 .sectionHeaderContentButton {
     display: flex;
     align-items: flex-start;
-    gap: 24px;
+    gap: 12px;
 }
 
 .btnDesktop {
@@ -496,7 +529,9 @@ span {
 .graphicChardTextDesktop p {
     display: inline-block;
     margin-left: 6px;
-    color: var(--text-darkgray);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-primary-gray);
 }
 
 .graphicChardTextDesktop p:nth-child(2) {
@@ -517,19 +552,13 @@ span {
 
 /*-- graphic END --*/
 
-/*-- allData START --*/
+/* allData START */
 
 .dataHeader {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 16px;
-}
-
-.allData .data {
-    display: flex;
-    gap: 24px;
-    justify-content: space-between;
 }
 
 .containerInsideData {
@@ -538,12 +567,29 @@ span {
     border-radius: 10px;
 }
 
-.tableHeader {
+.allData .data {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.tableHeader,
+.chartHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
     padding: 16px 24px;
+    border-bottom: 1px solid var(--border-secondry-gray);
+}
+
+.chartHeader {
+    gap: 4px;
+    padding: 16px 20px;
+}
+
+.data .table {
+    display: grid;
 }
 
 table tr {
@@ -645,15 +691,10 @@ tbody td:last-child a {
     gap: 6px;
 }
 
-.chartHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 20px;
-}
 
 .rowContainer {
     padding: 0 20px;
+
 }
 
 .rowContainer ul li {
@@ -675,7 +716,7 @@ tbody td:last-child a {
     margin-left: auto;
 }
 
-.rowContainer .circle {
+.rowContainer ul .circle {
     background-color: var(--text-black);
     border-radius: 3px;
     height: 8px;
@@ -694,6 +735,15 @@ tbody td:last-child a {
     border-top: 1px solid var(--border-secondry-gray);
 }
 
+
+.chartFooter .btnWhite {
+    border: 0px;
+    color: var(--primary-blue);
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
 /* allData END */
 
 /*-------------------- containerMain END ---------------------*/
@@ -710,11 +760,25 @@ tbody td:last-child a {
 
     /*-------------------- sideBar START ---------------------*/
 
-    .containerSideBar {
-        padding: auto 16px;
-        background: var(--bg-mobile-sidebar);
-        border-right: none;
-        border-bottom: 1px solid var(--border-dark-blue);
+    .sideBarMobile {
+        background: #151B28;
+        padding: 20px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .sideBarMobileLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sideBarMobileLogo img {
+        height: 23px;
+    }
+
+    .sideBarMobileLogo a {
+        display: block;
     }
 
     .sideBar {
@@ -722,7 +786,6 @@ tbody td:last-child a {
     }
 
     /*-------------------- sideBar END ---------------------*/
-
 
     /*-------------------- containerMain START ---------------------*/
 
@@ -835,4 +898,5 @@ tbody td:last-child a {
     /*-- allData START --*/
 
     /*-- allData END --*/
+
 }
