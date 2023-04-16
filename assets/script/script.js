@@ -14,7 +14,7 @@ new Chart(chartDesktop, {
         }, {
             label: 'infrastructures',
             data: [null, 78, null, 20, null, null, null, null, null, null, 24],
-            backgroundColor: '#135dcb',
+            backgroundColor: '#5CB1FF',
             borderRadius: 2,
         }]
     },
