@@ -209,212 +209,6 @@ h5 {
     display: none !important;
 }
 
-/* allData START */
-
-.dataHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.allData .data {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 24px;
-    align-items: flex-start;
-}
-
-.tableHeader,
-.chartHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    padding: 16px 24px;
-    border-bottom: 1px solid var(--border-secondry-gray);
-}
-
-.chartHeader {
-    gap: 4px;
-    padding: 16px 20px;
-    margin-bottom: 28px;
-}
-
-.data .table {
-    display: grid;
-}
-
-table tr {
-    border-top: 1px solid var(--border-secondry-gray);
-}
-
-thead tr {
-    display: grid;
-    grid-template-columns: 2.5fr 2fr 2fr 3fr 1fr;
-}
-
-thead th {
-    padding: 13px 0 13px 24px;
-    text-align: start;
-}
-
-tbody td {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-
-
-tbody .textSMedium {
-    color: var(--text-darkgray);
-}
-
-tbody .priceProfit {
-    color: var(--text-green);
-}
-
-tbody .priceLoss {
-    color: var(--text-primary-gray);
-}
-
-tbody .date {
-    color: var(--text-primary-gray);
-}
-
-tbody .account {
-    gap: 12px;
-}
-
-tbody .accountInfo span {
-    color: var(--text-primary-gray);
-}
-
-tbody tr {
-    display: grid;
-    grid-template-columns: 2.5fr 2fr 2fr 3fr 1fr;
-}
-
-tbody td:first-child {
-    padding: 16px 17px 16px 24px;
-    justify-content: flex-start;
-}
-
-tbody td:nth-child(2) {
-    padding: 22px 24px;
-}
-
-tbody td:nth-child(3) {
-    padding: 22px 24px;
-}
-
-tbody td:nth-child(4) {
-    padding: 12px 26px 12px 24px;
-}
-
-tbody td:last-child {
-    justify-content: center;
-}
-
-tbody td:last-child a {
-    padding: 10px;
-}
-
-
-.tableFooter {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 24px;
-    border-top: 1px solid var(--border-secondry-gray);
-}
-
-.tableFooter .pageNumbers a {
-    padding: 0px 16px;
-}
-
-.tableFooter .prev,
-.tableFooter .next {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-
-.rowContainer {
-    padding: 0 20px;
-   
-}
-
-.rowContainer ul li{
-    padding: 8px 0;
-}
-
-.rowContainer .contentText {
-    margin-bottom: 33px;
-}
-
-.rowContainer .contentText li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border-bottom: 1px solid var(--border-secondry-gray);
-}
-
-.rowContainer .contentText li:last-child {
-    border: 0;
-}
-
-.rowContainer .price {
-    margin-left: auto;
-}
-
-.rowContainer ul .circle {
-    background-color: var(--text-black);
-    border-radius: 3px;
-    height: 8px;
-    width: 8px;
-}
-
-.chartFooter .textSSemibold {
-    width: 211px;
-}
-
-.chartFooter {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 16px 20px;
-    border-top: 1px solid var(--border-secondry-gray);
-}
-
-
-.chartFooter .btnWhite {
-    border: 0px;
-    color: var(--primary-blue);
-}
-
-.rowContainer .chartText {
-    position: relative;
-}
-
-.rowContainer .chartText div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-
-
-.rowContainer canvas {
-    width: 180px !important;
-    height: 180px !important;
-    margin: 0 auto 16px;
-}
-
-/* allData END */
-
 /* sideBar start */
 
 body {
@@ -784,6 +578,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 24px;
+    align-items: flex-start;
 }
 
 .tableHeader,
@@ -799,6 +594,7 @@ body {
 .chartHeader {
     gap: 4px;
     padding: 16px 20px;
+    margin-bottom: 28px;
 }
 
 .data .table {
@@ -807,6 +603,10 @@ body {
 
 table tr {
     border-top: 1px solid var(--border-secondry-gray);
+}
+
+table tr:last-child {
+    border-bottom: 1px solid var(--border-secondry-gray);
 }
 
 thead tr {
@@ -858,6 +658,7 @@ tbody tr {
 tbody td:first-child {
     padding: 16px 17px 16px 24px;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 tbody td:nth-child(2) {
@@ -885,7 +686,6 @@ tbody td:last-child a {
     display: flex;
     justify-content: space-between;
     padding: 12px 24px;
-    border-top: 1px solid var(--border-secondry-gray);
 }
 
 .pageNumbers {
@@ -908,6 +708,11 @@ tbody td:last-child a {
 .rowContainer {
     padding: 0 20px;
 
+}
+
+
+.rowContainer .contentText {
+    margin-bottom: 33px;
 }
 
 .rowContainer ul li {
@@ -948,6 +753,23 @@ tbody td:last-child a {
     border-top: 1px solid var(--border-secondry-gray);
 }
 
+.rowContainer .chartText {
+    position: relative;
+}
+
+.rowContainer .chartText div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.rowContainer canvas {
+    width: 175px !important;
+    height: 175px !important;
+    margin: 0 auto 16px;
+}
 
 .chartFooter .btnWhite {
     border: 0px;
@@ -1115,8 +937,36 @@ tbody td:last-child a {
         grid-template-columns: 1fr;
     }
 
-    .allData .containerInsideData:first-child {
-        /* grid-area: 1 / 1 / 1 / span 2; */
+    .containerInsideData {
+        overflow-x: scroll;
+    }
+
+    .containerInsideData::-webkit-scrollbar-track {
+        /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+        background-color: #747A8B26;
+        border-radius: 50px;
+        height: 6px;
+    }
+
+    .containerInsideData::-webkit-scrollbar {
+        height: 6px;
+        background-color: #F5F5F5;
+    }
+
+    .containerInsideData::-webkit-scrollbar-thumb {
+        height: 6px;
+        border-radius: 50px;
+        background-color: #606d7e;
+    }
+
+    .dataTable tbody td {
+        flex-wrap: nowrap;
+    }
+
+    .dataTable tbody img {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
     }
 
    
