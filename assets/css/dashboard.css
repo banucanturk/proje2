@@ -439,7 +439,7 @@ body {
     align-items: flex-start;
 }
 
-span {
+.lossGrowthCards span {
     padding: 2px 8px;
     border-radius: 5px;
     font-size: 14px;
