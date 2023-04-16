@@ -376,17 +376,28 @@ h5 {
 }
 
 .allData .data {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 24px;
-    justify-content: space-between;
 }
 
-.tableHeader {
+.tableHeader,
+.chartHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
     padding: 16px 24px;
+    border-bottom: 1px solid var(--border-secondry-gray);
+}
+
+.chartHeader {
+    gap: 4px;
+    padding: 16px 20px;
+}
+
+.data .table {
+    display: grid;
 }
 
 table tr {
@@ -481,6 +492,59 @@ tbody td:last-child a {
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+
+.rowContainer {
+    padding: 0 20px;
+   
+}
+
+.rowContainer ul li{
+    padding: 8px 0;
+}
+
+.rowContainer .contentText li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-secondry-gray);
+}
+
+.rowContainer .contentText li:last-child {
+    border: 0;
+}
+
+.rowContainer .price {
+    margin-left: auto;
+}
+
+.rowContainer ul .circle {
+    background-color: var(--text-black);
+    border-radius: 3px;
+    height: 8px;
+    width: 8px;
+}
+
+.chartFooter .textSSemibold {
+    width: 211px;
+}
+
+.chartFooter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-top: 1px solid var(--border-secondry-gray);
+}
+
+
+.chartFooter .btnWhite {
+    border: 0px;
+    color: var(--primary-blue);
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 
 /* allData END */
