@@ -472,7 +472,7 @@ tbody td:last-child a {
     border-top: 1px solid var(--border-secondry-gray);
 }
 
-.tableFooter .pageNumbers a{
+.tableFooter .pageNumbers a {
     padding: 0px 16px;
 }
 
@@ -531,6 +531,7 @@ body {
 .sideBarSectionAnalysis {
     padding: 10px 28px;
 }
+
 .sideBarHeaderText>p:last-child {
     font-weight: 500;
     font-size: 14px;
