@@ -383,6 +383,7 @@ h5 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 24px;
+    align-items: flex-start;
 }
 
 .tableHeader,
@@ -398,6 +399,7 @@ h5 {
 .chartHeader {
     gap: 4px;
     padding: 16px 20px;
+    margin-bottom: 28px;
 }
 
 .data .table {
@@ -508,6 +510,10 @@ tbody td:last-child a {
     padding: 8px 0;
 }
 
+.rowContainer .contentText {
+    margin-bottom: 33px;
+}
+
 .rowContainer .contentText li {
     display: flex;
     align-items: center;
@@ -549,6 +555,26 @@ tbody td:last-child a {
     display: flex;
     gap: 6px;
     align-items: center;
+}
+
+.rowContainer .chartText {
+    position: relative;
+}
+
+.rowContainer .chartText div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.rowContainer canvas {
+    width: 180px !important;
+    height: 180px !important;
+    margin: 0 auto 16px;
 }
 
 /* allData END */
