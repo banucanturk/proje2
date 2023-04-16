@@ -266,6 +266,10 @@ body {
     color: var(--white);
 }
 
+.sideMenuSection li:hover img {
+    filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(180deg) brightness(104%) contrast(101%);
+}
+
 .sideMenuSection li:hover {
     padding: 16.24px 0px;
     border-left: 3px solid #F9F9F9;
@@ -505,6 +509,10 @@ span {
     border-top: 1px solid var(--border-secondry-gray);
     padding: 16px 20px 16px 20px;
     align-items: center;
+}
+
+.chartMobile {
+    display: none !important;
 }
 
 /*-- graphic END --*/
