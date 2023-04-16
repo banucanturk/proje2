@@ -431,7 +431,6 @@ body {
 .active {
     background: #333B48;
     padding: 12px 28px;
-    margin-left: -28px;
     color: var(--text-white);
 }
 
@@ -439,7 +438,9 @@ body {
     display: block;
     color: var(--text-white);
 }
-
+.sideBarSectionAnalysis {
+    padding: 10px 28px;
+}
 .sideBarHeaderText>p:last-child {
     font-weight: 500;
     font-size: 14px;
@@ -457,7 +458,6 @@ body {
 
 .sideBarSectionAnalysis h4 {
     color: var(--text-secondry-gray);
-    margin-bottom: 28px;
 }
 
 .sideMenuSection {
