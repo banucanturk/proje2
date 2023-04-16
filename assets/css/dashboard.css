@@ -9,7 +9,8 @@
     --primary-yellow: #EEA23E;
     --secondry-yellow: #FFF8EB;
 
-    --bg-dark-blue: #1C2534;
+    --bg-desktop-sidebar: #1C2534;
+    --bg-mobile-sidebar: #151B28;
     --white: #FFFFFF;
 
     --light-blue: #5CB1FF;
@@ -133,7 +134,7 @@ h5 {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    color: #F9F9F9;
+    color: var(--text-white);
 }
 
 .UPPERCASESemiboldL {
@@ -177,7 +178,7 @@ h5 {
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
     border-radius: 5px;
     background: var(--primary-blue);
-    color: #fff;
+    color: var(--white);
     display: inline-block;
     text-decoration: none;
     border: 1px solid transparent;
@@ -185,8 +186,8 @@ h5 {
 }
 
 .btnWhite {
-    background-color: #fff;
-    color: #272D37;
+    background-color: var(--white);
+    color: var(--text-darkgray);
     border: 1px solid var(--border-primary-gray);
 }
 
@@ -194,6 +195,13 @@ h5 {
     display: flex;
     gap: 6px;
     align-items: center;
+}
+
+.btnOpen {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: var(--primary-blue);
 }
 
 body {
@@ -205,8 +213,8 @@ body {
 
 .containerSideBar {
     padding: 16.24px 28px;
-    background: var(--bg-dark-blue);
-    border-right: 1px solid #2E3545
+    background: var(--bg-desktop-sidebar);
+    border-right: 1px solid var(--border-dark-blue);
 }
 
 .sideBar {
@@ -234,7 +242,7 @@ body {
 }
 
 .sideBarSectionAnalysis h6 {
-    color: #A5ACBA;
+    color: var(--text-secondry-gray);
     padding-bottom: 28px;
 }
 
@@ -251,14 +259,16 @@ body {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.1px;
-    color: #A5ACBA;
+    color: var(--text-secondry-gray);
 }
 
-.sideMenuSection li:hover a{
+.sideMenuSection li:hover a {
     color: var(--white);
 }
 
-.sideMenuSection li:hover{
+.sideMenuSection li:hover {
+    padding: 16.24px 0px;
+    border-left: 3px solid #F9F9F9;
     background: #333B48;
 }
 
@@ -268,7 +278,7 @@ body {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.1px;
-    color: #A5ACBA;
+    color: var(--text-secondry-gray);
 }
 
 .sideMenuSection ul li p {
@@ -311,6 +321,7 @@ body {
 
 .breadcrumb {
     display: flex;
+    gap: 4px;
     color: var(--text-primary-gray);
 }
 
@@ -496,17 +507,6 @@ span {
     align-items: center;
 }
 
-.graphicBottom a {
-    color: var(--primary-blue);
-    gap: 6px;
-    display: flex;
-    align-items: center;
-}
-
-.graphicBottom img {
-    display: inline-block;
-}
-
 /*-- graphic END --*/
 
 /*-- allData START --*/
@@ -514,7 +514,7 @@ span {
 .dataHeader {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 16px;
 }
 
@@ -621,7 +621,12 @@ tbody td:last-child a {
     border-top: 1px solid var(--border-secondry-gray);
 }
 
-.tableFooter .pageNumbers a{
+.pageNumbers {
+    display: flex;
+    align-items: baseline;
+}
+
+.tableFooter .pageNumbers a {
     padding: 0px 16px;
 }
 
@@ -632,6 +637,54 @@ tbody td:last-child a {
     gap: 6px;
 }
 
+.chartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+}
+
+.rowContainer {
+    padding: 0 20px;
+}
+
+.rowContainer ul li {
+    padding: 8px 0;
+}
+
+.rowContainer .contentText li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-secondry-gray);
+}
+
+.rowContainer .contentText li:last-child {
+    border: 0;
+}
+
+.rowContainer .price {
+    margin-left: auto;
+}
+
+.rowContainer .circle {
+    background-color: var(--text-black);
+    border-radius: 3px;
+    height: 8px;
+    width: 8px;
+}
+
+.chartFooter .textSSemibold {
+    width: 211px;
+}
+
+.chartFooter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-top: 1px solid var(--border-secondry-gray);
+}
 
 /* allData END */
 
@@ -651,9 +704,9 @@ tbody td:last-child a {
 
     .containerSideBar {
         padding: auto 16px;
-        background: #151B28;
+        background: var(--bg-mobile-sidebar);
         border-right: none;
-        border-bottom: 1px solid #2E3545;
+        border-bottom: 1px solid var(--border-dark-blue);
     }
 
     .sideBar {
@@ -761,7 +814,17 @@ tbody td:last-child a {
         display: none;
     }
 
+    .chartDesktop {
+        display: none !important;
+    }
+
+    .chartMobile {
+        display: block !important;
+    }
+
     /*-- graphic END --*/
 
+    /*-- allData START --*/
 
+    /*-- allData END --*/
 }
