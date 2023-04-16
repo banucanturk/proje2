@@ -155,7 +155,7 @@
   <div class="sideBarMobile">
     <div class="sideBarMobileLogo">
       <img src="assets/images/svg/sideBarLookscout.png" alt="Lookscout Logo">
-      <a href="#"><img src="assets/images/svg/hamburgerMenu.svg" alt="Açılır Kapanır Menü"></a>
+      <a href="#"><img src="assets/images/svg/hamburgerMenu.svg" alt="Açilir Kapanir Menü"></a>
     </div>
   </div>
 
@@ -292,9 +292,10 @@
       </div>
       <!-- dataHeader END -->
 
-      <!-- data START -->
+      <!-- data -->
       <div class="data">
 
+        <!-- containerInsideData -->
         <div class="containerInsideData">
 
           <!-- dataTable -->
@@ -474,52 +475,68 @@
           <!-- dataTable end-->
 
         </div>
+        <!-- containerInsideData end -->
 
 
+        <!-- containerInsideData -->
         <div class="containerInsideData">
 
           <!-- dataChart -->
           <div class="dataChart">
+
             <div class="chartHeader">
               <h5>Your Wallet</h5>
-              <a href="#"><img src="assets/images/svg/icons/dotMenu.svg" alt="detail button"></a>
+              <a href="#"><img src="assets/images/svg/icons/dotMenu.svg" alt="dot Menu"></a>
             </div>
 
-          </div>
+            <div class="rowContainer">
 
-          <div class="rowContainer">
+              <div class="chartText">
+                <canvas id="chartDoughnutDesktop" class="chartDoughnutDesktop">
+                </canvas>
+                <div>
+                  <p class="textSMedium">Total</p>
+                  <p class="HeadlineXSDesktopSemibold">$299</p>
+                </div>
+              </div>
+              
 
-            <ul class="contentText">
-              <li class="textMMedium">
-                <p class="circle"></p>
-                <p class="text">Buildings</p>
-                <p class="price">$175</p>
-              </li>
-              <li class="textMMedium">
-                <p class="circle"></p>
-                <p class="text">Travel</p>
-                <p class="price">$254</p>
-              </li>
-              <li class="textMMedium">
-                <p class="circle"></p>
-                <p class="text">Essentials</p>
-                <p class="price">$884</p>
-              </li>
-            </ul>
+              <ul class="contentText">
+                <li class="textMMedium">
+                  <p class="circle"></p>
+                  <p class="text">Buildings</p>
+                  <p class="price">$175</p>
+                </li>
+                <li class="textMMedium">
+                  <p class="circle"></p>
+                  <p class="text">Travel</p>
+                  <p class="price">$254</p>
+                </li>
+                <li class="textMMedium">
+                  <p class="circle"></p>
+                  <p class="text">Essentials</p>
+                  <p class="price">$884</p>
+                </li>
+              </ul>
 
-          </div>
-          <div class="chartFooter">
-            <p class="textSSemibold">Total of all counterparty balances</p>
-            <a class="btnOpen textButtonSemiboldSmall" href="#">Open<img src="assets/images/svg/icons/externalLink.svg"
-                alt="open"></a>
-            </a>
+            </div>
+          
+            <div class="chartFooter">
+              <p class="textSSemibold">Total of all counterparty balances</p>
+              <a class="btnOpen textButtonSemiboldSmall" href="#">Open<img src="assets/images/svg/icons/externalLink.svg"
+                  alt="open"></a>
+              </a>
+            </div>
+
           </div>
           <!-- dataChart end-->
 
         </div>
+        <!-- containerInsideData end -->
 
       </div>
-      <!-- data END -->
+      <!-- data end -->
+
 
     </section>
     <!-- allData END -->

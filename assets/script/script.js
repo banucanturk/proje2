@@ -69,3 +69,43 @@ new Chart(chartMobile, {
     }
 });
 /* Chart Bar Mobile End*/
+
+
+
+// Doughnut Charts
+
+
+let data = {
+    datasets: [
+        {
+            data: [120, 120, 120],
+            backgroundColor: [
+                "#437EF7",
+                "#135DCB",
+                "#5CB1FF"
+            ]
+        }
+    ]
+};
+  
+// Canvas elementini seçelim
+let ctx = document.getElementById("chartDoughnutDesktop");
+
+// Yeni bir doughnut grafiği oluşturalım
+let myDoughnutChart = new Chart(ctx, {
+type: "doughnut",
+data: data,
+options: {
+    responsive: true,
+    legend: {
+    position: "top"
+    },
+    animation: {
+    animateScale: true,
+    animateRotate: true
+    }
+}
+});
+
+
+// Doughnut Charts End
