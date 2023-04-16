@@ -1,8 +1,6 @@
 /* Chart Bar Desktop Start */
 var chartDesktop = document.getElementById('chartDesktop').getContext('2d');
-var img = new Image();
-img.src = 'path/to/image.png';
-const fillPattern = chartDesktop.createPattern(img, 'repeat');
+
 
 new Chart(chartDesktop, {
     type: 'bar',
@@ -17,7 +15,7 @@ new Chart(chartDesktop, {
         }, {
             label: 'infrastructures',
             data: [null, 78, null, 20, null, null, null, null, null, null, 24],
-            backgroundColor: fillPattern,
+            backgroundColor: '#5CB1FF',
             borderRadius: 2,
         }]
     },
@@ -35,13 +33,6 @@ new Chart(chartDesktop, {
                 }
             }
         },
-        // Draw the image onto the canvas element after the chart is rendered
-        draw: function (chart) {
-            if (chart.config.type === 'bar') {
-                var ctx = chart.chart.ctx;
-                chartDesktop.drawImage(img, 0, 0, img.width, img.height, 0, 0, 30, 30);
-            }
-        }
     }
 });
 /* Chart Bar Desktop End */
