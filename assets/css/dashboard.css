@@ -728,6 +728,10 @@ body {
         flex-direction: column;
     }
 
+    .containerMain {
+        padding: 12px 24px;
+    }
+
     .sideBarMobile {
         background: #151B28;
         padding: 20px;
@@ -787,4 +791,18 @@ body {
     .chartMobile {
         display: block !important;
     }
+
+
+    /* allData */
+    .allData .data {
+        grid-template-columns: 1fr;
+    }
+
+    .allData .containerInsideData:first-child {
+        /* grid-area: 1 / 1 / 1 / span 2; */
+    }
+
+   
+
+    /* allData END*/
 }
