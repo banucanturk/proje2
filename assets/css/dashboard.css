@@ -200,11 +200,6 @@ h5 {
     color: var(--primary-blue);
 }
 
-body {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-}
-
 /*-------------------- sideBar START ---------------------*/
 
 body {
@@ -344,6 +339,7 @@ body {
 /*-------------------- containerMain START ---------------------*/
 
 .containerMain {
+    grid-column: 2/3;
     padding: 32px;
     background: #FAFBFC;
 }
@@ -753,9 +749,8 @@ tbody td:last-child a {
 @media (max-width: 768px) {
 
     body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 64px 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     /*-------------------- sideBar START ---------------------*/
