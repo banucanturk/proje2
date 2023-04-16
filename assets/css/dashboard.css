@@ -38,6 +38,7 @@
 }
 
 .containerMain {
+    grid-column: 2/3 ;
     padding: 32px;
 }
 
@@ -394,17 +395,17 @@ span {
 
 body {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 280px auto;
 }
 
 .sideBarMobile {
     display: none;
 }
 .sideBar {
+    height: 100%;
     width: 280px;
-    height: 1460px;
     background: var(--bg-dark-blue);
-    position: relative;
+    position: fixed;
 }
 
 .sideBarHeader {
@@ -428,7 +429,11 @@ body {
     background: #333B48;
     padding: 12px 28px;
     margin-left: -28px;
-
+    color: var(--text-white);
+}
+.active a {
+    display: block;
+    color: var(--text-white);
 }
 
 .sideBarHeaderText > p:last-child {
@@ -439,7 +444,7 @@ body {
     color: var(--text-secondry-gray);
 }
 .sideBarSection {
-    padding-left: 28px;
+    /* padding-left: 28px; */
     display: flex;
     flex-direction: column;
 
@@ -447,11 +452,11 @@ body {
 .sideBarSectionAnalysis h4 {
     color: var(--text-secondry-gray);
     margin-bottom: 28px;
-
 }
 .sideMenuSection {
     margin-bottom: 40px;
 }
+
 .sideMenuSection li {
     display: flex;
     gap: 12px;
@@ -460,7 +465,7 @@ body {
 .sideMenuSection ul {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    /* gap: 28px; */
 }
  .sideMenuSection ul a {
     width: 157px;
@@ -469,11 +474,19 @@ body {
  }
 
  .sideMenuSection li {
+    padding: 10px 26px;
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -0.1px;
-    color: #A5ACBA;
+    color: var(--text-secondry-gray);
  }
+ .sideMenuSection img {
+    height: 22px;
+    width: 22px;
+    object-fit: cover;
+    aspect-ratio: 1;
+ }
+
  .sideMenuSection:last-child {
     margin-bottom: 28px;
  }
@@ -489,7 +502,7 @@ body {
     padding: 0px 6px;
  }
 .sideBarSectionEnd{
-  position: absolute;
+  
   bottom: 0;
  }
 
