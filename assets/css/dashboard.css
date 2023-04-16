@@ -387,6 +387,7 @@ h5 {
     align-items: center;
     gap: 8px;
     padding: 16px 24px;
+    border-bottom: 1px solid var(--border-secondry-gray);
 }
 
 .chartHeader {
@@ -492,14 +493,46 @@ tbody td:last-child a {
     gap: 6px;
 }
 
+
+.rowContainer {
+    padding: 0 20px;
+   
+}
+
+.rowContainer ul li{
+    padding: 8px 0;
+}
+
+.rowContainer .contentText li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border-secondry-gray);
+}
+
+.rowContainer .contentText li:last-child {
+    border: 0;
+}
+
+.rowContainer .price {
+    margin-left: auto;
+}
+
+.rowContainer ul .circle {
+    background-color: var(--text-black);
+    border-radius: 3px;
+    height: 8px;
+    width: 8px;
+}
+
 .chartFooter .textSSemibold {
     width: 211px;
 }
 
 .chartFooter {
     display: flex;
-    gap: 12px;
     align-items: flex-start;
+    justify-content: space-between;
     padding: 16px 20px;
     border-top: 1px solid var(--border-secondry-gray);
 }
