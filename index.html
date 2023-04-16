@@ -10,151 +10,172 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/reset.css?v=1" />
   <link rel="stylesheet" href="assets/css/dashboard.css?v=1" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <title>Dashboard</title>
 </head>
 
 <body>
+  <!--sideBar start-->
+
   <div class="sideBar">
+
+    <!--sideBarHeader start -->
+
     <div class="sideBarHeader">
-      <img src="assets/images/svg/sideBarHeader.svg" alt="Header Avatar"> 
+      <img src="assets/images/svg/sideBarHeader.svg" alt="Header Avatar">
       <div class="sideBarHeaderText">
         <p>Brian Ford</p>
         <p>brianford@lok.com</p>
       </div>
     </div>
 
-  <div class="sideBarSection">
+    <!--sideBarHeader end -->
 
-    <div class="sideBarSectionStart">
+    <!--sideBarSection start -->
 
-        <div class="sideBarSectionAnalysis">
+    <div class="sideBarSection">
 
-          <h4>ANALYSIS</h4>
+      <!--sideBarSectionStart start -->
+
+      <div class="sideBarSectionStart">
+        <div class="sideBarSectionStartMiddle">
+
+          <div class="sideBarSectionAnalysis">
+
+            <h4>ANALYSIS</h4>
+          </div>
+
+          <div class="sideMenuSection">
+
+            <ul>
+
+              <li class="active">
+                <img src="assets/images/svg/home.svg" alt="Home Svg">
+                <a href="#">Overview</a>
+              </li>
+
+
+              <li>
+                <img src="assets/images/svg/dashboard.svg" alt="">
+                <a href="#">Dashboard</a>
+              </li>
+
+
+              <li>
+                <img src="assets/images/svg/allCharts.svg" alt="">
+                <a href="#">All Charts</a>
+              </li>
+
+
+              <li>
+                <img src="assets/images/svg/analyze.svg" alt="">
+                <a href="#">Analyze</a>
+              </li>
+
+            </ul>
+
+          </div>
         </div>
-      <div class="sideMenuSection">
 
-        <ul>
-        
-          <li class> 
-            <img src="assets/images/svg/home.svg" alt="Home Svg">
-            <a class="overview" href="#">Overview</a>
-          </li>
+        <!--sideBarSectionStart end -->
 
-        
-          <li>
-            <img src="assets/images/svg/dashboard.svg" alt="">
-            <a href="#">Dashboard</a>
-          </li>
 
-        
-          <li>
-            <img src="assets/images/svg/allCharts.svg" alt="">
-            <a href="#">All Charts</a>
-          </li>
+        <!--sideBarSectionMiddle start-->
 
-        
-          <li>
-            <img src="assets/images/svg/analyze.svg" alt="">
-            <a href="#">Analyze</a>
-          </li>
-        </ul>
+        <div class="sideBarSectionMiddle">
 
+          <div class="sideBarSectionAnalysis">
+            <h4>DATA MANAGEMENT</h4>
+          </div>
+
+          <div class="sideMenuSection">
+            <ul>
+
+              <li>
+                <img src="assets/images/svg/earts.svg" alt="Home Svg">
+                <a href="#">Explore Events</a>
+                <p>5</p>
+              </li>
+
+
+              <li>
+                <img src="assets/images/svg/wallet.svg" alt="">
+                <a href="#">Payment Information</a>
+              </li>
+
+
+              <li>
+                <img src="assets/images/svg/labelling.svg" alt="">
+                <a href="#">Visual Labeling</a>
+              </li>
+
+
+              <li>
+                <img src="assets/images/svg/data.svg" alt="">
+                <a href="#">Live Data Feed</a>
+                <img src="assets/images/svg/ok.svg" alt="">
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!--sideBarSectionMiddle end-->
+
+      <!--sideBarSectionEnd start-->
+
+      <div class="sideBarSectionEnd">
+        <div class="sideBarSectionAnalysis">
+          <h4>ADMINISTRATION</h4>
+        </div>
+
+        <div class="sideMenuSection">
+          <ul>
+            <li>
+              <img src="assets/images/svg/flag.svg" alt="Home Svg">
+              <a href="#">Updates </a>
+            </li>
+
+
+            <li>
+              <img src="assets/images/svg/wallet.svg" alt="">
+              <a href="#">Intergrations</a>
+              <img src="assets/images/svg/ok.svg" alt="">
+            </li>
+
+
+            <li>
+              <img src="assets/images/svg/headphones.svg" alt="">
+              <a href="#">Support</a>
+            </li>
+
+
+            <li>
+              <img src="assets/images/svg/user.svg" alt="">
+              <a href="#">Account</a>
+              <img src="assets/images/svg/ok.svg" alt="">
+
+            </li>
+
+            <li>
+              <img src="assets/images/svg/exit.svg" alt="">
+              <a href="#">Sign Out</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-
-    <div class="sideBarSectionMiddle">
-    
-      <div class="sideBarSectionAnalysis">
-        <h4>DATA MANAGEMENT</h4>
-      </div>
-
-      <div class="sideMenuSection">
-        <ul>
-        
-          <li> 
-            <img src="assets/images/svg/earts.svg" alt="Home Svg">
-            <a href="#">Explore Events</a>
-            <p>5</p>
-          </li>
-
-        
-          <li>
-            <img src="assets/images/svg/wallet.svg" alt="">
-            <a href="#">Payment Information</a>
-          </li>
-
-        
-          <li>
-            <img src="assets/images/svg/labelling.svg" alt="">
-            <a href="#">Visual Labeling</a>
-          </li>
-
-        
-          <li>
-            <img src="assets/images/svg/data.svg" alt="">
-            <a href="#">Live Data Feed</a>
-            <img src="assets/images/svg/ok.svg" alt="">
-
-          </li>
-        </ul>
-
-      </div>
-    </div>
-
-    <div class="sideBarSectionEnd">
-
-    
-      <div class="sideBarSectionAnalysis">
-        <h4>ADMINISTRATION</h4>
-      </div>
-
-      <div class="sideMenuSection">
-        <ul>
-        
-          <li> 
-            <img src="assets/images/svg/flag.svg" alt="Home Svg">
-            <a href="#">Updates </a>
-          </li>
-
-        
-          <li>
-            <img src="assets/images/svg/wallet.svg" alt="">
-            <a href="#">Intergrations</a>
-            <img src="assets/images/svg/ok.svg" alt="">
-          </li>
-
-        
-          <li>
-            <img src="assets/images/svg/headphones.svg" alt="">
-            <a href="#">Support</a>
-          </li>
-
-        
-          <li>
-            <img src="assets/images/svg/user.svg" alt="">
-            <a href="#">Account</a>
-            <img src="assets/images/svg/ok.svg" alt="">
-
-          </li>
-
-          <li>
-            <img src="assets/images/svg/exit.svg" alt="">
-            <a href="#">Sign Out</a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-
-    
+    <!--sideBarSectionEnd end -->
   </div>
 
-    
-
+  <div class="sideBarMobile">
+    <div class="sideBarMobileLogo">
+      <img src="assets/images/svg/sideBarLookscout.png" alt="Lookscout Logo">
+      <a href="#"><img src="assets/images/svg/hamburgerMenu.svg" alt="Açılır Kapanır Menü"></a>
+    </div>
   </div>
-
-
 
   <!-- containerMain START -->
   <section class="containerMain">
@@ -302,7 +323,9 @@
                 <tr>
                   <td>
                     <a href="#"><img src="assets/images/svg/users/grand-rapids.svg" alt=""></a>
-                    <a href="#"><p class="textSMedium">Grand Rapids</p></a>
+                    <a href="#">
+                      <p class="textSMedium">Grand Rapids</p>
+                    </a>
                   </td>
                   <td>
                     <p class="textSMedium priceProfit">+ 6,320.53</p>
@@ -325,7 +348,9 @@
                 <tr>
                   <td>
                     <a href="#"><img src="assets/images/svg/users/bell-gardens.svg" alt=""></a>
-                    <a href="#"><p class="textSMedium">Bell Gardens</p></a>
+                    <a href="#">
+                      <p class="textSMedium">Bell Gardens</p>
+                    </a>
                   </td>
                   <td>
                     <p class="textSMedium priceProfit">+ 6,471.39</p>
@@ -348,7 +373,9 @@
                 <tr>
                   <td>
                     <a href="#"><img src="assets/images/svg/users/broomfield.svg" alt=""></a>
-                    <a href="#"><p class="textSMedium">Broomfield</p></a>
+                    <a href="#">
+                      <p class="textSMedium">Broomfield</p>
+                    </a>
                   </td>
                   <td>
                     <p class="textSMedium priceLoss">- 2,223.9</p>
@@ -371,7 +398,9 @@
                 <tr>
                   <td>
                     <a href="#"><img src="assets/images/svg/users/yakima.svg" alt=""></a>
-                    <a href="#"><p class="textSMedium">Yakima</p></a>
+                    <a href="#">
+                      <p class="textSMedium">Yakima</p>
+                    </a>
                   </td>
                   <td>
                     <p class="textSMedium priceProfit">+ 7,344.50</p>
@@ -394,7 +423,9 @@
                 <tr>
                   <td>
                     <a href="#"><img src="assets/images/svg/users/springfield.svg" alt=""></a>
-                    <a href="#"><p class="textSMedium">Springfield</p></a>
+                    <a href="#">
+                      <p class="textSMedium">Springfield</p>
+                    </a>
                   </td>
                   <td>
                     <p class="textSMedium priceLoss">- 6,157.14</p>
