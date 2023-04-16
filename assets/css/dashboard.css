@@ -294,7 +294,7 @@ h5 {
     border-radius: 10px;
 }
 
-/*-------------------- Graphic --------------------*/
+/*-------------------- Graphic Desktop --------------------*/
 
 .graphic {
     border: 1px solid var(--border-secondry-gray);
@@ -501,10 +501,9 @@ tbody td:last-child a {
 
 .rowContainer {
     padding: 0 20px;
-   
 }
 
-.rowContainer ul li{
+.rowContainer ul li {
     padding: 8px 0;
 }
 

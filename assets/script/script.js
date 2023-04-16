@@ -1,5 +1,5 @@
 /* Chart Bar Desktop Start */
-const chartDesktop = document.getElementById('chartDesktop');
+var chartDesktop = document.getElementById('chartDesktop').getContext('2d');
 
 new Chart(chartDesktop, {
     type: 'bar',
@@ -47,7 +47,6 @@ new Chart(chartMobile, {
             data: [20, null, 25, 50, 90, 70, null],
             backgroundColor: '#437ef7',
             borderRadius: 2,
-
         }, {
             label: 'infrastructures',
             data: [null, 70, null, null, null, null, 20],
@@ -66,6 +65,10 @@ new Chart(chartMobile, {
                 }
             }
         },
+        plugins: {
+            legend: {
+                display: false,
+            }
+        }
     }
 });
-/* Chart Bar Mobile End*/
