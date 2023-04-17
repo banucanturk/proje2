@@ -198,7 +198,8 @@ h5 {
 
 .btnOpen {
     display: flex;
-    justify-content: space-between;
+    gap: 6px;
+    color: var(--primary-blue);
 }
 
 .sectionHeaderContentText {
@@ -874,6 +875,11 @@ tbody td:last-child a {
     align-items: baseline;
 }
 
+.pageNumbers .active {
+    background: var(--white);
+    color: var(--primary-blue);
+}
+
 .tableFooter .pageNumbers a {
     padding: 0px 16px;
 }
@@ -888,13 +894,9 @@ tbody td:last-child a {
 
 .rowContainer {
     padding: 0 20px;
-
-}
-
-
-.rowContainer .contentText {
     margin-bottom: 33px;
 }
+
 
 .rowContainer ul li {
     padding: 8px 0;
