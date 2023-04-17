@@ -1,0 +1,326 @@
+:root {
+    /* colors */
+    --primary-blue: #437EF7;
+    --secondry-blue: #F5FAFF;
+    --primary-red: #E2341D;
+    --secondry-red: #FFF2F0;
+    --primary-green: #2D8A39;
+    --secondry-green: #F0FAF0;
+    --primary-yellow: #EEA23E;
+    --secondry-yellow: #FFF8EB;
+
+    --bg-desktop-sidebar: #1C2534;
+    --bg-mobile-sidebar: #151B28;
+    --white: #FFFFFF;
+
+    --light-blue: #5CB1FF;
+    --dark-blue: #135DCB;
+
+    /* border color */
+    --border-dark-blue: #2E3545;
+    --border-primary-gray: #DAE0E6;
+    --border-secondry-gray: #EAEBF0;
+
+    /* text color */
+    --text-green: #5DC264;
+    --text-black: #000000;
+    --text-darkgray: #272D37;
+    --text-primary-gray: #5F6D7E;
+    --text-secondry-gray: #A5ACBA;
+    --text-white: #F9F9F9;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.01em;
+    color: var(--text-darkgray);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: var(--text-darkgray);
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-darkgray);
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-darkgray);
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--text-darkgray);
+}
+
+/* Text */
+.textXSRegular {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: var(--text-primary-gray);
+}
+
+.textLRegular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-primary-gray);
+}
+
+.textXSMedium {
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--text-primary-gray);
+}
+
+.textSMedium {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-primary-gray);
+}
+
+.textMMedium {
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--text-black);
+}
+
+.textLMedium {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-darkgray);
+}
+
+/* Text Semibold */
+
+.textSSemibold {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--text-primary-gray);
+}
+
+.textMSemibold {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.textLSemibold {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--text-white);
+}
+
+.UPPERCASESemiboldL {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+}
+
+/* Text Headline */
+
+.HeadlineXSDesktopSemibold {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+}
+
+.HeadlineSMobileSemibold {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+}
+
+.textButtonSemiboldSmall {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* Button */
+
+.btnPrimary {
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 16px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    border-radius: 5px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.btnWhite {
+    background-color: var(--white);
+    color: var(--text-darkgray);
+    border: 1px solid var(--border-primary-gray);
+    transition: border, color, background-color 0.3s ease-in-out;
+}
+
+.btnArrow {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+
+.btnOpen {
+    display: flex;
+    gap: 6px;
+    color: var(--primary-blue);
+}
+
+.sectionHeaderContentText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sectionHeaderContentButton {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* cards */
+
+.content .cards {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.content .card {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 12px;
+    width: 100%;
+
+    background: var(--white);
+    border: 1px solid var(--border-secondry-gray);
+    box-shadow: 0px 1px 2px 0px #1018280A;
+    border-radius: 10px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content span {
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    gap: 4px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.growth {
+    background: var(--secondry-green);
+    color: var(--primary-green);
+    transition-property: color, background-color, scale;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    cursor: default;
+}
+
+.loss {
+    background: var(--secondry-red);
+    color: var(--primary-red);
+    cursor: default;
+    transition-property: color, background-color, scale;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/* dashboardAlert */
+
+.dashboardAlert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 16px;
+    margin-bottom: 32px;
+    background: var(--secondry-blue);
+    border: 1px solid var(--primary-blue);
+    border-radius: 10px;
+}
+
+/*----------------------------------------------------------*/
+/*-------------------- Animation Start --------------------*/
+/*----------------------------------------------------------*/
+.btnPrimary:hover {
+    background-color: var(--dark-blue);
+}
+
+.btnWhite:hover {
+    background-color: var(--border-primary-gray);
+}
+
+.loss:hover {
+    background-color: var(--primary-red);
+    color: var(--text-white);
+    scale: 1.1;
+}
+
+.loss:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.growth:hover {
+    background-color: var(--primary-green);
+    color: var(--text-white);
+    scale: 1;
+}
+
+.growth:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/*----------------------------------------------------------*/
+/*-------------------- Animation Finish--------------------*/
+/*----------------------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    
+}
