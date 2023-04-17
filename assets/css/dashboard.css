@@ -845,7 +845,6 @@ body {
 .dataTable tbody td:first-child {
     padding: 16px 17px 16px 24px;
     justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .dataTable tbody td:nth-child(2) {
