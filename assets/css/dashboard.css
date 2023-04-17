@@ -783,86 +783,94 @@ body {
     display: grid;
 }
 
-table tr {
+.dataTable table tr {
     border-top: 1px solid var(--border-secondry-gray);
 }
 
-table tr:last-child {
+.dataTable table tr:last-child {
     border-bottom: 1px solid var(--border-secondry-gray);
 }
 
-thead tr {
+.dataTable thead tr {
     display: grid;
     grid-template-columns: 2.5fr 2fr 2fr 3fr 1fr;
 }
 
-thead th {
+.dataTable thead th {
     padding: 13px 0 13px 24px;
     text-align: start;
 }
 
-tbody td {
+.dataTable tbody .name, 
+.dataTable tbody td {
     display: flex;
     gap: 16px;
     align-items: center;
 }
 
-
-tbody .textSMedium {
-    color: var(--text-darkgray);
-}
-
-tbody .priceProfit {
-    color: var(--text-green);
-}
-
-tbody .priceLoss {
-    color: var(--text-primary-gray);
-}
-
-tbody .date {
-    color: var(--text-primary-gray);
-}
-
-tbody .account {
+.dataTable tbody .account {
     gap: 12px;
 }
 
-tbody .accountInfo span {
+.dataTable tbody img {
+    max-width: none;
+}
+
+.dataTable tbody .textSMedium {
+    color: var(--text-darkgray);
+}
+
+.dataTable tbody .priceProfit {
+    color: var(--text-green);
+}
+
+.dataTable tbody .priceLoss {
     color: var(--text-primary-gray);
 }
 
-tbody tr {
+.dataTable tbody .date {
+    color: var(--text-primary-gray);
+}
+
+
+.dataTable tbody .accountInfo span {
+    color: var(--text-primary-gray);
+}
+
+.dataTable tbody tr {
     display: grid;
     grid-template-columns: 2.5fr 2fr 2fr 3fr 1fr;
 }
 
-tbody td:first-child {
+.dataTable tbody td:first-child {
     padding: 16px 17px 16px 24px;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-tbody td:nth-child(2) {
+.dataTable tbody td:nth-child(2) {
     padding: 22px 24px;
 }
 
-tbody td:nth-child(3) {
+.dataTable tbody td:nth-child(3) {
     padding: 22px 24px;
 }
 
-tbody td:nth-child(4) {
+.dataTable tbody td:nth-child(4) {
     padding: 12px 26px 12px 24px;
 }
 
-tbody td:last-child {
+.dataTable tbody td:last-child {
     justify-content: center;
 }
 
-tbody td:last-child a {
+.dataTable tbody td:last-child a {
     padding: 10px;
 }
 
+.dataTable a {
+    display: inline-block;
+}
 
 .tableFooter {
     display: flex;
@@ -878,6 +886,10 @@ tbody td:last-child a {
 .pageNumbers .active {
     background: var(--white);
     color: var(--primary-blue);
+}
+
+.tableFooter img {
+    max-width: none;
 }
 
 .tableFooter .pageNumbers a {
