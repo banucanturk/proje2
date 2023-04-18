@@ -345,8 +345,6 @@ h5 {
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
     border-radius: 10px;
     width: 360px;
-    padding: 16px 20px;
-
   }
 
  .cardHeader {
@@ -354,7 +352,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #EAEBF0;
-    padding-bottom: 16px;
+    padding: 16px 20px;
    
  }
  .cardHeader p {
@@ -364,9 +362,11 @@ h5 {
  .cardGeneralContent {
     display: flex;
     gap: 12px;
-    margin-top: 22px;
-    margin-bottom: 16px;
+    padding: 16px 20px;
 
+ }
+ .cardContentAvatar {
+    padding: 0 20px 24px;
  }
  .dateTime {
     
@@ -435,6 +435,12 @@ h5 {
 .vertikalcontainerInner {
     display: flex;
     gap: 22px;
+    border-bottom: 1px solid #EAEBF0;
+    padding-bottom: 16px;
+}
+
+.vertikalcontainerInner:last-child{
+   border-bottom: 0;
 }
 
 .vertikalcontainerInner img {
