@@ -373,6 +373,7 @@ h5 {
     --text-darkgray: #f9f9f9;
     --text-span-red: #f04438;
     --text-span-green: #2D8A39;
+    --text-black: #FFFFFF;
 
     /* filter */
     --filter-green: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(404%) hue-rotate(76deg) brightness(101%) contrast(86%);
@@ -872,7 +873,7 @@ body {
     text-align: start;
 }
 
-.dataTable tbody .name, 
+.dataTable tbody .name,
 .dataTable tbody td {
     display: flex;
     gap: 16px;
