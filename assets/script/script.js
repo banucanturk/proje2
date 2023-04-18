@@ -7,6 +7,7 @@ var currentUrl = window.location.href;
 const enableDarkMode = () => {
     darkModeToggle.classList.add('toggleDark');
     document.body.classList.add('darkmode');
+    darkModeToggle.classList.add('toggleDark');
     localStorage.setItem('darkMode', 'enabled');
     if (currentUrl.includes("index.html")) {
         darkModeToggle.src = "assets/images/svg/icons/dark/moon.svg";

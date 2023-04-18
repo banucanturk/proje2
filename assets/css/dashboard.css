@@ -13,6 +13,7 @@
     --bg-mobile-sidebar: #151B28;
     --bg-white: #fafbfc;
     --white: #FFFFFF;
+    --bg-darkmode: rgba(0, 0, 0, 0.2);
 
     --light-blue: #5CB1FF;
     --dark-blue: #135DCB;
@@ -345,24 +346,17 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 100px;
-}
-
-.darkTheme::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    height: 100px;
-    width: 100px;
-    filter: blur(5px);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
+    height: 60px;
+    width: 60px;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    background-color: var(--bg-darkmode);
+    z-index: 999999999999999999999999999999999999999;
 }
 
 .darkTheme img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -374,7 +368,7 @@ h5 {
     --secondry-green: #5dc264;
 
 
-
+    --bg-darkmode: rgba(255, 255, 255, 0.2);
     --bg-white: #151b28;
     --white: #1c2534;
 
@@ -394,6 +388,7 @@ h5 {
     /* filter */
     --filter-green: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(404%) hue-rotate(76deg) brightness(101%) contrast(86%);
     --filter-red: filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(6419%) hue-rotate(355deg) brightness(95%) contrast(85%);
+    --filter: brightness(0) invert(1);
 
 }
 
@@ -514,6 +509,7 @@ body {
     background: var(--bg-desktop-sidebar);
     position: fixed;
     overflow-y: scroll;
+    z-index: 2;
 }
 
 .sideBarHeader {
