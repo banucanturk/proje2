@@ -793,7 +793,7 @@ body {
 
 .dataTable thead tr {
     display: grid;
-    grid-template-columns: 2.5fr 2fr 2fr 3fr 1fr;
+    grid-template-columns: 248px 181px 195px 278px 128px;
 }
 
 .dataTable thead th {
@@ -839,7 +839,7 @@ body {
 
 .dataTable tbody tr {
     display: grid;
-    grid-template-columns: 2.5fr 2fr 2fr 3fr 1fr;
+    grid-template-columns: 248px 181px 195px 278px 128px;
 }
 
 .dataTable tbody td:first-child {
