@@ -684,6 +684,12 @@ h5 {
 
 /* cardGeneral start */
 
+.centerContainer{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
 .centerContainerText {
     width: 100%;
     display: flex;
@@ -709,10 +715,27 @@ h5 {
     gap: 12px;
 }
 
-/* cardGeneral start */
+/* cardGeneral end */
 
+/* map start */
 
+.chartBox {
+    box-shadow: 0px 1px 2px 0px #1018280A;
+    height: 280px;
+    width: 412px;
+    background: #FFFFFF;
+    /* Neutral/600 */
+    border: 1px solid #EAEBF0;
+    /* Shadow/XSM */
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* map end */
 
 @media (max-width: 768px) {
 
