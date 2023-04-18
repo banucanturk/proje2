@@ -3,13 +3,17 @@ let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('#toggleDark');
 
 const enableDarkMode = () => {
+    darkModeToggle.classList.add('toggleDark');
     document.body.classList.add('darkmode');
     localStorage.setItem('darkMode', 'enabled');
+    darkModeToggle.src = "assets/images/svg/icons/dark/moon.svg";
 };
 
 const disableDarkMode = () => {
     document.body.classList.remove('darkmode');
     localStorage.setItem('darkMode', null);
+    darkModeToggle.classList.remove('toggleDark');
+    darkModeToggle.src = "assets/images/svg/icons/dark/sun.svg";
 };
 
 if (darkMode === 'enabled') {
@@ -34,8 +38,7 @@ darkModeToggle.addEventListener('click', () => {
 
 
 /* Chart Bar Desktop Start */
-var chartDesktop = document.getElementById('chartDesktop').getContext('2d');
-
+const chartDesktop = document.getElementById('chartDesktop');
 
 new Chart(chartDesktop, {
     type: 'bar',
@@ -83,7 +86,8 @@ new Chart(chartDesktop, {
 
                 }
             }
-        }
+        },
+
     }
 });
 /* Chart Bar Desktop End */

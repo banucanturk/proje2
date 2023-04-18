@@ -18,7 +18,7 @@
 
 
   <div class="darkTheme">
-    <img src="assets/images/svg/icons/dark/sun.svg" alt="sun" id="toggleDark">
+    <img src="assets/images/svg/icons/dark/sun.svg" alt="sun" id="toggleDark" class="animation">
   </div>
   <!-------------------- containerSideBar START -------------------->
 
@@ -270,7 +270,9 @@
 
       <div class="graphicChard">
 
-        <canvas id="chartDesktop" class="chartDesktop"></canvas>
+        <canvas id="chartDesktop" class="chartDesktop">
+          <!-- <input type="checkbox" onchange="chartDark(this)" name="" id="chartCheckbox"> -->
+        </canvas>
         <canvas id="chartMobile" class="chartMobile"></canvas>
 
       </div>

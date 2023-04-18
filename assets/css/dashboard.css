@@ -29,6 +29,14 @@
     --text-primary-gray: #5F6D7E;
     --text-secondry-gray: #A5ACBA;
     --text-white: #F9F9F9;
+    --text-span-red: #F9F9F9;
+    --text-span-green: #F9F9F9;
+
+    /* filter */
+    --filter: brightness(0) invert(1);
+    --filter-white: brightness(0) invert(1);
+    --filter-red: brightness(0) invert(1);
+    --filter-green: brightness(0) invert(1);
 }
 
 * {
@@ -299,22 +307,30 @@ h5 {
 
 .loss:hover {
     background-color: var(--primary-red);
-    color: var(--text-white);
+    color: var(--text-span-red);
     scale: 1.1;
 }
 
+.loss img {
+    filter: var(--filter);
+}
+
 .loss:hover img {
-    filter: brightness(0) invert(1);
+    filter: var(--filter-red);
 }
 
 .growth:hover {
     background-color: var(--primary-green);
-    color: var(--text-white);
+    color: var(--text-span-green);
     scale: 1;
 }
 
+.growth img {
+    filter: var(--filter);
+}
+
 .growth:hover img {
-    filter: brightness(0) invert(1);
+    filter: var(--filter-green);
 }
 
 /*----------------------------------------------------------*/
@@ -323,14 +339,14 @@ h5 {
 
 /*-------------------- Dark Theme --------------------*/
 .darkTheme {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: 10px;
+    right: 20px;
 }
 
 .darkTheme img {
-    width: 24px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -353,8 +369,14 @@ h5 {
 
     /* text color */
     --text-white: #F9F9F9;
+    --text-primary-gray: #A5ACBA;
     --text-darkgray: #f9f9f9;
+    --text-span-red: #f04438;
+    --text-span-green: #2D8A39;
 
+    /* filter */
+    --filter-green: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(404%) hue-rotate(76deg) brightness(101%) contrast(86%);
+    --filter-red: filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(6419%) hue-rotate(355deg) brightness(95%) contrast(85%);
 
 }
 
@@ -362,6 +384,10 @@ h5 {
     transition-property: background-color, color, background;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+}
+
+.toggleDark {
+    filter: var(--filter);
 }
 
 
