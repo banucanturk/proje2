@@ -574,10 +574,45 @@ h5 {
     line-height: 20px;
     color: var(--text-primary-gray);
 }
-
-.cardContentAvatar img {
-    width: 216px;
+.cardContentAvatar {
+    display: flex;
+    gap: 170px;
 }
+.cardContentAvatarSeries {
+    display: flex;
+    position: relative;
+  } 
+  .cardContentAvatarSeries img {
+    position: absolute;
+  }
+  .cardContentAvatarSeries img:first-child {
+  position: static;
+  }
+  .avatar2 {
+    left: 27px;
+    z-index: 1;
+  
+  }
+  .avatar3 {
+    left: 54px;
+    z-index: 2;
+  }
+  .avatar4 {
+    left: 81px;
+    z-index: 3;
+  }
+  .avatar5 {
+    left: 108px;
+    z-index: 4;
+  }
+  .avatar6 {
+    left: 133px;
+    z-index: 5;
+  }
+  .avatar7 {
+    left: 160px;
+    z-index: 6;
+  }
 
 .growth {
     padding: 2px 8px;
