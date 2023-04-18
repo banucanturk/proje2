@@ -1,3 +1,38 @@
+/* Dark Theme*/
+let darkMode = localStorage.getItem('darkMode');
+const darkModeToggle = document.querySelector('#toggleDark');
+
+const enableDarkMode = () => {
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkMode', 'enabled');
+};
+
+const disableDarkMode = () => {
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkMode', null);
+};
+
+if (darkMode === 'enabled') {
+    enableDarkMode();
+};
+console.log(darkMode);
+
+darkModeToggle.addEventListener('click', () => {
+    darkMode = localStorage.getItem('darkMode');
+    if (darkMode !== 'enabled') {
+        enableDarkMode();
+        console.log(darkMode);
+    } else {
+        disableDarkMode();
+        console.log(darkMode);
+    }
+});
+
+
+
+/* Dark Theme End*/
+
+
 /* Chart Bar Desktop Start */
 var chartDesktop = document.getElementById('chartDesktop').getContext('2d');
 
@@ -33,6 +68,22 @@ new Chart(chartDesktop, {
                 }
             }
         },
+        plugins: {
+            legend: {
+                align: 'end',
+                anchor: 'end',
+                labels: {
+                    boxWidth: 10,
+                    useBorderRadius: true,
+                    borderRadius: 3,
+                    font: {
+                        family: 'Inter',
+                        size: 12,
+                    },
+
+                }
+            }
+        }
     }
 });
 /* Chart Bar Desktop End */
