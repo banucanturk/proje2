@@ -498,8 +498,10 @@ body {
     letter-spacing: -0.1px;
     color: #F9F9F9;
 }
-
-.active {
+.activeOverview {
+    background: #333B48;
+}
+.active:hover {
     background: #333B48;
     padding: 12px 28px;
     color: var(--text-white);
