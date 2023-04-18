@@ -11,6 +11,7 @@
 
     --bg-desktop-sidebar: #1C2534;
     --bg-mobile-sidebar: #151B28;
+    --bg-white: #fafbfc;
     --white: #FFFFFF;
 
     --light-blue: #5CB1FF;
@@ -320,6 +321,50 @@ h5 {
 /*-------------------- Animation Finish--------------------*/
 /*----------------------------------------------------------*/
 
+/*-------------------- Dark Theme --------------------*/
+.darkTheme {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.darkTheme img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.darkmode {
+    --secondry-blue: #1c2534;
+    --primary-red: #fff2f0;
+    --secondry-red: #f04438;
+    --primary-green: #f0faf0;
+    --secondry-green: #5dc264;
+
+
+
+    --bg-white: #1E1E1E;
+    --white: #1c2534;
+
+    /* border color */
+    --border-primary-gray: #2E3545;
+    --border-secondry-gray: #252d3c;
+
+
+    /* text color */
+    --text-white: #F9F9F9;
+    --text-darkgray: #f9f9f9;
+
+
+}
+
+.animation {
+    transition-property: background-color, color, background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
 /*-------------------- Graphic Desktop --------------------*/
 
 .graphic {
@@ -532,7 +577,7 @@ body {
 .containerMain {
     grid-column: 2/3;
     padding: 32px;
-    background: #FAFBFC;
+    background: var(--bg-white);
 }
 
 
