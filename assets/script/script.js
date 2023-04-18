@@ -1,19 +1,29 @@
 /* Dark Theme*/
 let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('#toggleDark');
+var currentUrl = window.location.href;
+
 
 const enableDarkMode = () => {
     darkModeToggle.classList.add('toggleDark');
     document.body.classList.add('darkmode');
     localStorage.setItem('darkMode', 'enabled');
-    darkModeToggle.src = "assets/images/svg/icons/dark/moon.svg";
+    if (currentUrl.includes("index.html")) {
+        darkModeToggle.src = "assets/images/svg/icons/dark/moon.svg";
+    } else if (currentUrl.includes("social-media.html")) {
+        darkModeToggle.src = "../assets/images/svg/icons/dark/moon.svg";
+    }
 };
 
 const disableDarkMode = () => {
     document.body.classList.remove('darkmode');
     localStorage.setItem('darkMode', null);
     darkModeToggle.classList.remove('toggleDark');
-    darkModeToggle.src = "assets/images/svg/icons/dark/sun.svg";
+    if (currentUrl.includes("index.html")) {
+        darkModeToggle.src = "assets/images/svg/icons/dark/sun.svg";
+    } else if (currentUrl.includes("social-media.html")) {
+        darkModeToggle.src = "../assets/images/svg/icons/dark/sun.svg";
+    }
 };
 
 if (darkMode === 'enabled') {

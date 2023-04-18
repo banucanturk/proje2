@@ -33,7 +33,7 @@
     --text-span-green: #F9F9F9;
 
     /* filter */
-    --filter: brightness(0) invert(1);
+    --filter: auto;
     --filter-white: brightness(0) invert(1);
     --filter-red: brightness(0) invert(1);
     --filter-green: brightness(0) invert(1);
@@ -342,6 +342,22 @@ h5 {
     position: fixed;
     top: 10px;
     right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+
+.darkTheme::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100px;
+    width: 100px;
+    filter: blur(5px);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .darkTheme img {
@@ -359,7 +375,7 @@ h5 {
 
 
 
-    --bg-white: #1E1E1E;
+    --bg-white: #151b28;
     --white: #1c2534;
 
     /* border color */
@@ -391,6 +407,24 @@ h5 {
     filter: var(--filter);
 }
 
+
+
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 50px;
+}
+
+html::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: var(--primary-blue);
+}
 
 /*-------------------- Graphic Desktop --------------------*/
 
@@ -689,7 +723,6 @@ body {
     padding: 16px 20px;
     gap: 12px;
     width: 100%;
-
     background: var(--white);
     border: 1px solid var(--border-secondry-gray);
     box-shadow: 0px 1px 2px 0px #1018280A;
