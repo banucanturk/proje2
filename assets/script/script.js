@@ -33,6 +33,22 @@ new Chart(chartDesktop, {
                 }
             }
         },
+        plugins: {
+            legend: {
+                align: 'end',
+                anchor: 'end',
+                labels: {
+                    boxWidth: 10,
+                    useBorderRadius: true,
+                    borderRadius: 3,
+                    font: {
+                        family: 'Inter',
+                        size: 12,
+                    },
+
+                }
+            }
+        }
     }
 });
 /* Chart Bar Desktop End */
