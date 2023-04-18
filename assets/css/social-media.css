@@ -341,28 +341,29 @@ h5 {
 /* headerContainer start */
 
 .headerContainer {
-    position: relative;
-    height: 154px;
     border: 1px solid #EAEBF0;
     border-radius: 5px;
     background-color: var(--white);
+    padding: 24px 42px;
 }
 
-.headerContainer img {
+.headerLogoDesktop{
     padding: 4px;
     border: 8px solid #F5F8FE;
     border-radius: 15px;
     position: absolute;
-    bottom: 24px;
-    left: 42px;
+    top: -38px;
+    left: 154px;
     background: #fff;
 }
 
 .headerContainer .headerContent {
-    position: absolute;
-    top: 24px;
-    right: 42px;
     width: calc(100% - 280px);
+    margin-left: auto;
+}
+
+.headerLogoMobile {
+    display: none;
 }
 
 .headerContent .headerTitle {
@@ -370,13 +371,16 @@ h5 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;    
+    flex-wrap: wrap;
 }
 
 .headerContent .title {
     display: flex;
     gap: 16px;
     align-items: center;
+    flex-wrap: wrap;
 }
+
 .headerContent .title .btnPrimary {
     padding: 2px 8px;
 }
@@ -384,6 +388,7 @@ h5 {
 .headerContent .headerInfo {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .headerContent .headerInfo .data {
@@ -575,20 +580,67 @@ h5 {
 
 @media (max-width: 768px) {
 
+    /* headerContainer start */
+    .headerLogoDesktop {
+        display: none;
+    }
+
+    .headerLogoMobile {
+        display: block;
+        position: absolute;
+        top: -56px;
+    }
+
+    .headerContainer {
+        padding: 64px 16px 24px;
+        position: relative;
+    }
+
+    .headerContainer .headerContent {
+        width: auto;
+    }
+
+    .headerContent .headerTitle {
+        flex-direction: column;
+        align-items: normal;
+        gap: 16px;
+    }
+
+    .headerContent .title {
+        justify-content: space-between;
+    }
+
+    .headerContent .headerInfo {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .headerContent .headerInfo .data {
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .headerInfo .data div {
+        width: 143.5px;
+    }
+    /* headerContainer end */
+
     /* sideContainer start */
 
-.socialMediaContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 24px;
-    border: 1px solid var(--border-secondry-gray)
-}
-.sideContainer {
-    display: none;
-} 
+    .socialMediaContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 24px;
+        border: 1px solid var(--border-secondry-gray);
+        position: relative;
+    }
+    .sideContainer {
+        display: none;
+    } 
 
- /* sideContainer start */
+    /* sideContainer start */
 
 
 }
