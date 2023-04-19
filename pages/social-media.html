@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/reset.css?v=1" />
     <link rel="stylesheet" href="../assets/css/social-media.css?v=1" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <title>Social Media</title>
 </head>
 
@@ -20,6 +21,58 @@
     </div>
     <div class="messContainer">
         <div class="socialMediaContainer">
+
+            <!-- headerContainer start -->
+            <div class="headerContainer">
+
+                <div class="flex-item">
+                    <img class="headerLogoDesktop" src="../assets/images/svg/logo-glyphs.svg" alt="">
+                    <img class="headerLogoMobile" src="../assets/images/svg/logo-placeholder-mobile.svg" alt="">
+                </div>
+
+                <div class="headerContent">
+
+                    <div class="headerTitle">
+                        <div class="title">
+                            <h1>Lookscout</h1>
+                            <button class="btnPrimary">cross-platform</button>
+                        </div>
+
+                        <a href="#" class="btnPrimary">Follow</a>
+                    </div>
+
+                    <div class="headerInfo">
+                        <div class="info textLRegular">
+                            <p>UI/UX Audition Company</p>
+                            <p>Country, City - 125,467 followers</p>
+                        </div>
+
+                        <div class="data">
+                            <div class="textLRegular">
+                                <p>Placement</p>
+                                <p>Company Size</p>
+                            </div>
+                            <div class="textLSemibold">
+                                <p>City</p>
+                                <p>32 Employees</p>
+                            </div>
+                        </div>
+
+                        <div class="data">
+                            <div class="textLRegular">
+                                <p>Type</p>
+                                <p>Industry</p>
+                            </div>
+                            <div class="textLSemibold">
+                                <p>Public Company</p>
+                                <p>Internet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- headerContainer end -->
+
 
             <!--sideContainer start-->
 
@@ -40,7 +93,16 @@
                         </div>
                     </div>
                     <div class="cardContentAvatar">
-                        <img src="../assets/images/svg/avatarGroup.svg" alt="Avatar Grup">
+                        <div class="cardContentAvatarSeries">
+                            <img class="avatar1" src="../assets/images/png/Avatar1.png" alt="">
+                            <img class="avatar2" src="../assets/images/png/Avatar2.png" alt="">
+                            <img class="avatar3"src="../assets/images/png/avatar3.png" alt="">
+                            <img class="avatar4" src="../assets/images/png/Avatar4.png" alt="">
+                            <img class="avatar5"src="../assets/images/png/Avatar5.png" alt="">
+                            <img class="avatar6"src="../assets/images/png/avatar6.png" alt="">
+                            <img class="avatar7"src="../assets/images/png/avatar7.png" alt="">
+                        </div>
+                        <img src="../assets/images/png/addButton8.png" alt="">
                     </div>
 
                 </div>
@@ -62,7 +124,7 @@
                                     <p>Price per seat:</p>
                                     <span>$530</span>
                                 </div>
-                                <span class="dolars">Done</span>
+                                <span class="growth">Done</span>
                             </div>
                         </div>
 
@@ -75,7 +137,7 @@
                                     <p>Price per seat:</p>
                                     <span>$300</span>
                                 </div>
-                                <span class="dolars dolarsAlt">In progress</span>
+                                <span class="growth growthAlt">In progress</span>
                             </div>
                         </div>
 
@@ -88,7 +150,7 @@
                                     <p>Price per seat:</p>
                                     <span>$230</span>
                                 </div>
-                                <span class="dolars dolarsEnd">Urgent</span>
+                                <span class="loss">Urgent</span>
                             </div>
                         </div>
                     </div>
@@ -120,6 +182,14 @@
 
                     </div>
                 </div>
+
+                            <!-- map start -->
+
+                            <div class="chartBox">
+                                <canvas id="myChart"></canvas>
+                            </div>
+            
+                        <!-- map end -->
             </div>
 
             <!--centerContainer end-->
@@ -130,20 +200,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/chartjs-chart-geo@3.5.2/build/index.umd.min.js"></script>
     <script src="../assets/script/script.js"></script>
+    <script src="../assets/script/map.js"></script>
 </body>
 
 </html>
