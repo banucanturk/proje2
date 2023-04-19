@@ -436,9 +436,20 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--primary-blue);
 }
 
+.bgSocialMedia {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.bgSocialMedia img,
+.bgSocialMedia source {
+    width: 100% !important;
+}
 
 .messContainer {
     width: 100%;
+    padding-top: 200px;
     background: var(--bg-white);
 }
 
@@ -471,6 +482,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: var(--white);
     padding: 24px 42px;
+    position: relative;
 }
 
 .headerLogoDesktop {
@@ -478,8 +490,8 @@ html::-webkit-scrollbar-thumb {
     border: 8px solid #F5F8FE;
     border-radius: 15px;
     position: absolute;
-    top: -38px;
-    left: 154px;
+    top: -24px;
+    left: 42px;
     background: #fff;
 }
 
@@ -785,7 +797,7 @@ html::-webkit-scrollbar-thumb {
 
 .chartBox {
     height: 280px;
-    width: 412px;
+    max-width: 412px;
     background: var(--white);
     /* Neutral/600 */
     border: 1px solid var(--border-secondry-gray);
@@ -856,7 +868,6 @@ html::-webkit-scrollbar-thumb {
         flex-direction: column;
         width: 100%;
         padding: 24px;
-        border: 1px solid var(--border-secondry-gray);
         position: relative;
     }
 
