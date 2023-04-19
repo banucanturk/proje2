@@ -458,7 +458,7 @@ html::-webkit-scrollbar-thumb {
     padding: 24px 42px;
 }
 
-.headerLogoDesktop{
+.headerLogoDesktop {
     padding: 4px;
     border: 8px solid #F5F8FE;
     border-radius: 15px;
@@ -481,7 +481,7 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;    
+    margin-bottom: 16px;
     flex-wrap: wrap;
 }
 
@@ -601,45 +601,55 @@ html::-webkit-scrollbar-thumb {
     line-height: 20px;
     color: var(--text-primary-gray);
 }
+
 .cardContentAvatar {
     display: flex;
     gap: 170px;
 }
+
 .cardContentAvatarSeries {
     display: flex;
     position: relative;
-  } 
-  .cardContentAvatarSeries img {
+}
+
+.cardContentAvatarSeries img {
     position: absolute;
-  }
-  .cardContentAvatarSeries img:first-child {
-  position: static;
-  }
-  .avatar2 {
+}
+
+.cardContentAvatarSeries img:first-child {
+    position: static;
+}
+
+.avatar2 {
     left: 27px;
     z-index: 1;
-  
-  }
-  .avatar3 {
+
+}
+
+.avatar3 {
     left: 54px;
     z-index: 2;
-  }
-  .avatar4 {
+}
+
+.avatar4 {
     left: 81px;
     z-index: 3;
-  }
-  .avatar5 {
+}
+
+.avatar5 {
     left: 108px;
     z-index: 4;
-  }
-  .avatar6 {
+}
+
+.avatar6 {
     left: 133px;
     z-index: 5;
-  }
-  .avatar7 {
+}
+
+.avatar7 {
     left: 160px;
     z-index: 6;
-  }
+}
 
 .growth {
     padding: 2px 8px;
@@ -711,7 +721,7 @@ html::-webkit-scrollbar-thumb {
 
 /* cardGeneral start */
 
-.centerContainer{
+.centerContainer {
     display: flex;
     gap: 16px;
     flex-direction: column;
@@ -747,14 +757,13 @@ html::-webkit-scrollbar-thumb {
 /* map start */
 
 .chartBox {
-    box-shadow: 0px 1px 2px 0px #1018280A;
     height: 280px;
     width: 412px;
-    background: #FFFFFF;
+    background: var(--white);
     /* Neutral/600 */
-    border: 1px solid #EAEBF0;
+    border: 1px solid var(--border-secondry-gray);
     /* Shadow/XSM */
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
+    box-shadow: 0px 1px 2px var(--border-secondry-gray);
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -810,6 +819,7 @@ html::-webkit-scrollbar-thumb {
     .headerInfo .data div {
         width: 143.5px;
     }
+
     /* headerContainer end */
 
     /* sideContainer start */
@@ -822,9 +832,10 @@ html::-webkit-scrollbar-thumb {
         border: 1px solid var(--border-secondry-gray);
         position: relative;
     }
+
     .sideContainer {
         display: none;
-    } 
+    }
 
     /* sideContainer start */
 
