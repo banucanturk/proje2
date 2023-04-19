@@ -465,6 +465,7 @@ html::-webkit-scrollbar-thumb {
 
 .headerContainer {
     grid-area: header;
+    position: relative;
 }
 
 .sideContainer {
@@ -478,21 +479,25 @@ html::-webkit-scrollbar-thumb {
 /* headerContainer start */
 
 .headerContainer {
-    border: 1px solid #EAEBF0;
+    border: 1px solid var(--border-secondry-gray);
     border-radius: 5px;
     background-color: var(--white);
     padding: 24px 42px;
     position: relative;
 }
 
+.flex-item {
+    position: absolute;
+    top: -46px;
+    border: 8px solid var(--border-secondry-gray);
+    background-color: var(--bg-white);
+    border-radius: 15px;
+}
+
+
 .headerLogoDesktop {
     padding: 4px;
-    border: 8px solid #F5F8FE;
-    border-radius: 15px;
-    position: absolute;
-    top: -24px;
-    left: 42px;
-    background: #fff;
+    filter: var(--filter);
 }
 
 .headerContainer .headerContent {
