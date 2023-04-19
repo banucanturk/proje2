@@ -377,7 +377,7 @@ h5 {
 }
 
 .darkmode {
-    --secondry-blue: #1c2534;
+    --secondry-blue: #2c3444;
     --primary-red: #fff2f0;
     --secondry-red: #f04438;
     --primary-green: #f0faf0;
@@ -701,10 +701,6 @@ html::-webkit-scrollbar-thumb {
     font-size: 14px;
 }
 
-.growthAlt {
-    background: var(--secondry-blue);
-    color: var(--primary-blue);
-}
 
 .loss {
     background: var(--secondry-red);
@@ -719,6 +715,10 @@ html::-webkit-scrollbar-thumb {
     color: var(--text-darkgray);
     margin-bottom: 3px;
 
+}
+
+.vertikalcontainerInner img {
+    border-radius: 8px;
 }
 
 .vertikalcontainerInner {
@@ -824,10 +824,16 @@ html::-webkit-scrollbar-thumb {
         display: none;
     }
 
+    .flex-item {
+        width: 96px;
+        height: 96px;
+        position: absolute;
+        top: -45px;
+    }
+
     .headerLogoMobile {
         display: block;
-        position: absolute;
-        top: -56px;
+        filter: var(--filter);
     }
 
     .headerContainer {
