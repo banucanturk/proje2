@@ -412,6 +412,7 @@ h5 {
 
 .headerContainer {
     grid-area: header;
+    position: relative;
 }
 
 .sideContainer {
@@ -431,14 +432,16 @@ h5 {
     padding: 24px 42px;
 }
 
+.flex-item {
+    position: absolute;
+    top: -46px;
+    border: 8px solid var(--border-secondry-gray);
+    border-radius: 15px;
+}
+
 .headerLogoDesktop{
     padding: 4px;
-    border: 8px solid #F5F8FE;
-    border-radius: 15px;
-    position: absolute;
-    top: -38px;
-    left: 154px;
-    background: #fff;
+    filter: var(--filter);
 }
 
 .headerContainer .headerContent {
