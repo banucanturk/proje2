@@ -272,6 +272,15 @@ h5 {
     cursor: default;
 }
 
+.progress {
+    background: var(--secondry-blue);
+    color: var(--primary-blue);
+    transition-property: color, background-color, scale;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    cursor: default;
+}
+
 .loss {
     background: var(--secondry-red);
     color: var(--primary-red);
@@ -309,7 +318,7 @@ h5 {
 .loss:hover {
     background-color: var(--primary-red);
     color: var(--text-span-red);
-    scale: 1.1;
+    scale: 1;
 }
 
 .loss img {
@@ -323,6 +332,12 @@ h5 {
 .growth:hover {
     background-color: var(--primary-green);
     color: var(--text-span-green);
+    scale: 1;
+}
+
+.progress:hover {
+    background-color: var(--primary-blue);
+    color: var(--secondry-blue);
     scale: 1;
 }
 
@@ -652,6 +667,18 @@ html::-webkit-scrollbar-thumb {
 }
 
 .growth {
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.progress {
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.loss {
     padding: 2px 8px;
     border-radius: 5px;
     font-size: 14px;
