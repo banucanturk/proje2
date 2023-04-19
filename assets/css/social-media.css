@@ -476,6 +476,51 @@ html::-webkit-scrollbar-thumb {
     grid-area: main;
 }
 
+/* navbar start */
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 19px 32px;
+    align-items: center;
+    position: relative;
+}
+
+
+.menuNavbar ul {
+    display: flex;
+    gap: 8px;
+}
+
+.menuNavbar ul li a {
+    padding: 9px 16px;
+}
+
+.menuNavbar .textMSemibold {
+    color: var(--text-darkgray);
+}
+
+.navbar .userNavbar {
+    display: flex;
+    text-align: start;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.navbar .text p:first-child {
+    color: var(--text-darkgray);
+}
+
+.navbar .text p:last-child {
+    font-weight: 400;
+}
+
+.menuNavbar .active {
+    color: var(--primary-blue);
+}
+
+/* navbar end */
+
 /* headerContainer start */
 
 .headerContainer {
@@ -818,6 +863,16 @@ html::-webkit-scrollbar-thumb {
 /* map end */
 
 @media (max-width: 768px) {
+
+    /* navbar start */
+    .menuNavbar {
+        display: none;
+    }
+    .userNavbar {
+        display: none !important;
+    }
+
+    /* navbar end */
 
     /* headerContainer start */
     .headerLogoDesktop {
